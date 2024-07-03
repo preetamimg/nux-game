@@ -2655,6 +2655,11 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl\/tight{
+  font-size: 2.25rem;
+  line-height: 1.25;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2745,6 +2750,10 @@ video {
 
 .leading-\[133\%\]{
   line-height: 133%;
+}
+
+.tracking-\[-0\.04em\]{
+  letter-spacing: -0.04em;
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -3724,6 +3733,20 @@ body{
 
 .peer\/mm:checked ~ .peer-checked\/mm\:block{
   display: block;
+}
+
+@media not all and (min-width: 1280px){
+  .max-xl\:text-3xl\/tight{
+    font-size: 1.875rem;
+    line-height: 1.25;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .max-md\:text-2xl\/tight{
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
 }
 
 @media (min-width: 640px){
