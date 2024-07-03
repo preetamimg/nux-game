@@ -2764,32 +2764,8 @@ body{
   height: 100%;
 }
 
-.\*\:\!h-8 > *{
-  height: 2rem !important;
-}
-
 .\*\:\*\:h-full > * > *{
   height: 100%;
-}
-
-.\*\:\!h-10 > *{
-  height: 2.5rem !important;
-}
-
-.\*\:\!h-12 > *{
-  height: 3rem !important;
-}
-
-.\*\:\!h-14 > *{
-  height: 3.5rem !important;
-}
-
-.\*\:\!h-16 > *{
-  height: 4rem !important;
-}
-
-.\*\:\*\:max-h-12 > * > *{
-  max-height: 3rem;
 }
 
 .\*\:\*\:\!w-auto > * > *{
@@ -3026,32 +3002,12 @@ body{
 }
 
 @media (min-width: 640px){
-  .sm\:static{
-    position: static;
-  }
-
-  .sm\:top-0{
-    top: 0px;
-  }
-
   .sm\:block{
     display: block;
   }
 
-  .sm\:flex{
-    display: flex;
-  }
-
   .sm\:hidden{
     display: none;
-  }
-
-  .sm\:max-h-full{
-    max-height: 100%;
-  }
-
-  .sm\:w-full{
-    width: 100%;
   }
 
   .sm\:flex-row{
@@ -3074,10 +3030,6 @@ body{
     justify-content: flex-end;
   }
 
-  .sm\:justify-between{
-    justify-content: space-between;
-  }
-
   .sm\:gap-x-10{
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
@@ -3087,16 +3039,8 @@ body{
     row-gap: 0px;
   }
 
-  .sm\:overflow-visible{
-    overflow: visible;
-  }
-
   .sm\:border-b-2{
     border-bottom-width: 2px;
-  }
-
-  .sm\:bg-transparent{
-    background-color: transparent;
   }
 
   .sm\:px-6{
@@ -3129,36 +3073,8 @@ body{
 }
 
 @media (min-width: 768px){
-  .md\:static{
-    position: static;
-  }
-
-  .md\:top-0{
-    top: 0px;
-  }
-
-  .md\:block{
-    display: block;
-  }
-
-  .md\:max-h-full{
-    max-height: 100%;
-  }
-
-  .md\:w-full{
-    width: 100%;
-  }
-
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .md\:overflow-visible{
-    overflow: visible;
-  }
-
-  .md\:bg-transparent{
-    background-color: transparent;
   }
 
   .md\:py-0{
