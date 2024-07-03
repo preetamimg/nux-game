@@ -741,6 +741,14 @@ video {
   top: 4rem;
 }
 
+.-left-\[10px\]{
+  left: -10px;
+}
+
+.top-\[25\%\]{
+  top: 25%;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -946,6 +954,10 @@ video {
 
 .mt-px{
   margin-top: 1px;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .box-border{
@@ -1164,6 +1176,10 @@ video {
   height: max-content;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .\!w-max{
   width: -moz-max-content !important;
   width: max-content !important;
@@ -1272,6 +1288,10 @@ video {
 
 .max-w-sm{
   max-width: 24rem;
+}
+
+.max-w-6xl{
+  max-width: 72rem;
 }
 
 .flex-1{
@@ -2354,6 +2374,22 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-bl-\[50px\]{
+  border-bottom-left-radius: 50px;
+}
+
+.rounded-br-\[50px\]{
+  border-bottom-right-radius: 50px;
+}
+
+.rounded-tl-\[50px\]{
+  border-top-left-radius: 50px;
+}
+
+.rounded-tr-\[50px\]{
+  border-top-right-radius: 50px;
+}
+
 .border{
   border-width: 1px;
 }
@@ -2437,6 +2473,21 @@ video {
 
 .border-b-transparent{
   border-bottom-color: transparent;
+}
+
+.border-b-\[\#a5a5a5\]{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(165 165 165 / var(--tw-border-opacity));
+}
+
+.border-l-\[\#a5a5a5\]{
+  --tw-border-opacity: 1;
+  border-left-color: rgb(165 165 165 / var(--tw-border-opacity));
+}
+
+.border-r-\[\#a5a5a5\]{
+  --tw-border-opacity: 1;
+  border-right-color: rgb(165 165 165 / var(--tw-border-opacity));
 }
 
 .bg-\[\#e8e5f4\]{
@@ -2529,6 +2580,10 @@ video {
 
 .bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.bg-theme2\/40{
+  background-color: rgb(124 124 254 / 0.4);
 }
 
 .bg-opacity-60{
@@ -2729,6 +2784,10 @@ video {
 
 .p-8{
   padding: 2rem;
+}
+
+.p-\[6px\]{
+  padding: 6px;
 }
 
 .px-10{
@@ -3036,6 +3095,14 @@ video {
   line-height: 133%;
 }
 
+.leading-\[116\%\]{
+  line-height: 116%;
+}
+
+.leading-\[148\%\]{
+  line-height: 148%;
+}
+
 .-tracking-wide{
   letter-spacing: -0.025em;
 }
@@ -3109,6 +3176,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-400{
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -4085,6 +4157,10 @@ body{
   margin-inline-start: 0.5rem;
 }
 
+.group:hover .group-hover\:ms-2{
+  margin-inline-start: 0.5rem;
+}
+
 .group\/db:hover .group-hover\/db\:h-2{
   height: 0.5rem;
 }
@@ -4213,6 +4289,14 @@ body{
 }
 
 @media (min-width: 640px){
+  .sm\:order-1{
+    order: 1;
+  }
+
+  .sm\:order-2{
+    order: 2;
+  }
+
   .sm\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -4229,6 +4313,10 @@ body{
     grid-column: span 7 / span 7;
   }
 
+  .sm\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
   .sm\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -4243,6 +4331,34 @@ body{
 
   .sm\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .sm\:-mt-\[1px\]{
+    margin-top: -1px;
+  }
+
+  .sm\:-mt-\[2px\]{
+    margin-top: -2px;
+  }
+
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .sm\:mr-12{
+    margin-right: 3rem;
+  }
+
+  .sm\:ms-\[31px\]{
+    margin-inline-start: 31px;
+  }
+
+  .sm\:ms-\[72px\]{
+    margin-inline-start: 72px;
+  }
+
+  .sm\:flex{
+    display: flex;
   }
 
   .sm\:size-10{
@@ -4264,6 +4380,10 @@ body{
 
   .sm\:flex-nowrap{
     flex-wrap: nowrap;
+  }
+
+  .sm\:items-start{
+    align-items: flex-start;
   }
 
   .sm\:items-center{
@@ -4299,12 +4419,32 @@ body{
     border-bottom-width: 2px;
   }
 
+  .sm\:border-b{
+    border-bottom-width: 1px;
+  }
+
+  .sm\:border-l{
+    border-left-width: 1px;
+  }
+
+  .sm\:border-r{
+    border-right-width: 1px;
+  }
+
+  .sm\:bg-transparent{
+    background-color: transparent;
+  }
+
   .sm\:p-16{
     padding: 4rem;
   }
 
   .sm\:p-3{
     padding: 0.75rem;
+  }
+
+  .sm\:p-0{
+    padding: 0px;
   }
 
   .sm\:px-6{
@@ -4337,6 +4477,11 @@ body{
     padding-bottom: 2.25rem;
   }
 
+  .sm\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:pb-\[60px\]{
     padding-bottom: 60px;
   }
@@ -4347,6 +4492,10 @@ body{
 
   .sm\:pt-\[90px\]{
     padding-top: 90px;
+  }
+
+  .sm\:ps-12{
+    padding-inline-start: 3rem;
   }
 
   .sm\:text-start{
@@ -4380,6 +4529,12 @@ body{
 
   .sm\:underline{
     text-decoration-line: underline;
+  }
+
+  .sm\:shadow-none{
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
