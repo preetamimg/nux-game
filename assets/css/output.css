@@ -4366,6 +4366,10 @@ body{
     height: 2.5rem;
   }
 
+  .sm\:h-80{
+    height: 20rem;
+  }
+
   .sm\:w-10{
     width: 2.5rem;
   }
@@ -4404,6 +4408,10 @@ body{
 
   .sm\:gap-5{
     gap: 1.25rem;
+  }
+
+  .sm\:gap-0{
+    gap: 0px;
   }
 
   .sm\:gap-x-9{
@@ -4496,6 +4504,10 @@ body{
 
   .sm\:ps-12{
     padding-inline-start: 3rem;
+  }
+
+  .sm\:text-left{
+    text-align: left;
   }
 
   .sm\:text-start{
