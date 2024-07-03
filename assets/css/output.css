@@ -1750,6 +1750,10 @@ video {
   gap: 1rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-x-3{
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -3334,6 +3338,10 @@ body{
   width: auto !important;
 }
 
+.\*\:w-1\/2 > *{
+  width: 50%;
+}
+
 .\*\:\*\:cursor-pointer > * > *{
   cursor: pointer;
 }
@@ -3920,6 +3928,10 @@ body{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .\*\:md\:w-1\/4 > *{
+    width: 25%;
+  }
 }
 
 @media (min-width: 1024px){
@@ -4009,6 +4021,10 @@ body{
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .\*\:lg\:w-1\/6 > *{
+    width: 16.666667%;
   }
 }
 
