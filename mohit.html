@@ -1750,7 +1750,7 @@
                   <h1 class="text-theme3 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">TURNKEY FEATURES</h1>
                 </div>
                 <div class="lg:w-1/2 w-full">
-                  <p class="md:text-xl text-base max-w-lg-96 text-slate-500 sm:mt-10 mt-5 mb-3">
+                  <p class="md:text-xl bg-red-900 text-base max-w-lg-96 text-slate-500 sm:mt-10 mt-5 mb-3">
                     NuxGame’s turnkey online casino solution provides means for operators to rapidly scale or improve the functionality of their iGaming business so that they can fully realise their goals. The software comprises a variety of features to ensure maximum flexibility and versatility.
                   </p>
                 </div>
@@ -1845,6 +1845,77 @@
              </div>
            </div>
           <!-- trunkey features -->
+           
+       <!-- thumb-slider -->
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="grid grid-cols-12 justify-center items-center">
+            <div class="col-span-6">
+              <h1 class="text-theme3 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">ONLINE CASINO GAMES</h1>
+              <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper myContent2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                   <p class="md:text-xl text-base  text-slate-500 my-6">
+                      In order to make an informed choice of providers and gaming content for a casino website, it is recommended to research the targeted market. To do that, one must define what are its popular game genres, providers, sports, and gaming titles.
+                      Likewise, making sure the provider is licensed to operate in the jurisdiction of your choice. We strongly recommend using only trusted casino software suppliers.
+                      Check out the list of casino software providers available using the demo version of the platform.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                     <p class="md:text-xl text-base  text-slate-500 my-6">
+                      In order to make an informed choice of providers and gaming content for a casino website, it is recommended to research the targeted market. To do that, one must define what are its popular game genres, providers, sports, and gaming titles.
+                      Likewise, making sure the provider is licensed to operate in the jurisdiction of your choice. We strongly recommend using only trusted casino software suppliers.
+                      Check out the list of casino software providers available using the demo version of the platform.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="md:text-xl text-base  text-slate-500 my-6">
+                      In order to make an informed choice of providers and gaming content for a casino website, it is recommended to research the targeted market. To do that, one must define what are its popular game genres, providers, sports, and gaming titles.
+                      Likewise, making sure the provider is licensed to operate in the jurisdiction of your choice. We strongly recommend using only trusted casino software suppliers.
+                      Check out the list of casino software providers available using the demo version of the platform.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                     <p class="md:text-xl text-base  text-slate-500 my-6">
+                      In order to make an informed choice of providers and gaming content for a casino website, it is recommended to research the targeted market. To do that, one must define what are its popular game genres, providers, sports, and gaming titles.
+                      Likewise, making sure the provider is licensed to operate in the jurisdiction of your choice. We strongly recommend using only trusted casino software suppliers.
+                      Check out the list of casino software providers available using the demo version of the platform.
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                     <p class="md:text-xl text-base  text-slate-500 my-6">
+                      In order to make an informed choice of providers and gaming content for a casino website, it is recommended to research the targeted market. To do that, one must define what are its popular game genres, providers, sports, and gaming titles.
+                      Likewise, making sure the provider is licensed to operate in the jurisdiction of your choice. We strongly recommend using only trusted casino software suppliers.
+                      Check out the list of casino software providers available using the demo version of the platform.
+                    </p>
+                  </div>
+                
+                </div>
+              </div>
+            
+
+          </div>
+          <div class="col-span-6 flex">
+            <div thumbsSlider="" class="swiper mycontent !w-full !h-full my-auto">
+              <div class=" swiper-wrapper flex-col gap-y-4 justify-center items-center !h-auto sm:text-base text-sm font-semibold">
+                <div class="swiper-slide">
+                  <div class="hover:bg-theme1 !text-wrap px-10 py-1 h-24 flex items-center rounded-lg hover:text-white text-theme3 font-bold text-lg w-96  border-b border-theme-3">GAME CATEGORIES</div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="hover:bg-theme1 text-wrap px-10 py-10 rounded-lg flex items-center hover:text-white text-theme3 font-bold text-lg  w-96  border-b border-theme-3">GAME HOW TO CHOOSE CASINO GAME PROVIDERS</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hover:bg-theme1 text-wrap px-10 py-10 rounded-lg flex items-center hover:text-white text-theme3 font-bold text-lg  w-96  border-b border-theme-3">ADVANTAGES</div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hover:bg-theme1 text-wrap px-10 py-10 rounded-lg flex items-center hover:text-white text-theme3 font-bold text-lg  w-96  border-b border-theme-3">CASINO GAME INTEGRATIONS PROVIDERS</div>
+                </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+       <!-- thumb-slider -->
 
      <!-- footer start  -->
       <section class="bg-[#e8e5f4]">
@@ -2112,7 +2183,7 @@
    <script>
     var swiper = new Swiper(".myBlog", {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 4,
       loop:true,
       autoplay: {
         delay: 2500,
@@ -2149,6 +2220,23 @@
     });
   </script>
     <!-- end -->
+     <!-- thumbslider script -->
+     <script>
+      var swiper = new Swiper(".mycontent", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: false,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".myContent2", {
+        spaceBetween: 10,
+       
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+     <!-- thumbslider script -->
 
 <!-- footer swiper  -->
 
