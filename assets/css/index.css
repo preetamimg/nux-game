@@ -6,3 +6,33 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+/* Entering: "transition ease-out duration-100"
+   From: "transform opacity-0 scale-95"
+   To: "transform opacity-100 scale-100"
+   Leaving: "transition ease-in duration-75"
+   From: "transform opacity-100 scale-100"
+   To: "transform opacity-0 scale-95" */
+
+   .transition-enter {
+    transition: transform 100ms ease-out, opacity 100ms ease-out;
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  
+  .transition-enter-active {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .transition-leave {
+    transition: transform 75ms ease-in, opacity 75ms ease-in;
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .transition-leave-active {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  
