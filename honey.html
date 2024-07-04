@@ -476,12 +476,12 @@
           <!-- Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             <div>
-              <label for="hs-firstname-contacts-1" class="block mb-2 text-lg text-black font-bold">Your Name <span class="text-red-500">*</span></label>
+              <label for="hs-firstname-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Your Name <span class="text-red-500">*</span></label>
               <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 border rounded-lg text-sm focus:border-x-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none bg-theme5" placeholder="Your Name">
             </div>
 
             <div>
-              <label for="hs-lastname-contacts-1" class="block mb-2  text-lg text-black font-bold ">Email <span class="text-red-500">*</span></label>
+              <label for="hs-lastname-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold ">Email <span class="text-red-500">*</span></label>
               <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 border rounded-lg text-sm focus:border-x-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none bg-theme5" placeholder="email@example.com">
             </div>
           </div>
@@ -490,7 +490,7 @@
           <!-- Grid -->
           <div>
             <div>
-              <label for="hs-email-contacts-1" class="block mb-2 text-lg text-black font-bold">Preferred Messenge</label>
+              <label for="hs-email-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Preferred Messenge</label>
               <div class="relative flex flex-col">
                 
                 <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
@@ -500,12 +500,12 @@
                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
                   </svg>
                 </label>
-                <div class="w-full peer-checked/mm:block hidden">
+                <div class="w-full peer-checked/mm:block hidden border border-theme1"> 
                   <div class="grid grid-cols-1 flex-wrap w-full gap-4">
-                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative border">
-                      <a href="javascript:;">Skype</a>
-                      <a href="javascript:;">Whatsaap</a>
-                      <a href="javascript:;">Telegram</a>
+                    <div class="w-full text-xs  xl:text-sm *:flex *:items-center *:gap-x-3 *:py-2 *:relative border">
+                      <a href="javascript:;" class="hover:bg-purple-50 duration-300 px-3 text-theme3 hover:font-bold">Skype</a>
+                      <a href="javascript:;"class="hover:bg-purple-50 duration-300 px-3 text-theme3 hover:font-bold" >Whatsaap</a>
+                      <a href="javascript:;" class="hover:bg-purple-50 duration-300 px-3 text-theme3 hover:font-bold">Telegram</a>
                     </div>
                   </div>
                 </div>
@@ -517,27 +517,30 @@
           <!-- End Grid -->
 
           <div>
-            <label for="hs-about-contacts-1" class="block mb-2 text-lg text-black font-bold">Message<span class="text-red-500">*</span></label>
+            <label for="hs-about-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Message<span class="text-red-500">*</span></label>
             <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-lg border bg-theme5 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Please provide a brief summery"></textarea>
           </div>
         </div>
         <!-- End Grid -->
         <div class="mt-8">
           <div class="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">
               By ticking this box, you agree to NuxGame's
-              <a class="" target="_blank" href="javascript:;">
-                Privacy Policy
+              <span>
+                <a class="" href="javascript:;">
+                  Privacy Policy
                 </a>
+              </span>
+              
             </label>
           </div>
         </div>
-        <button class="bg-theme1 px-10 py-2 rounded-lg">
-          <a href="" class="flex items-center gap-2 font-bold text-base sm:text-lg group">
+        <button class="bg-theme1 px-10 py-2 rounded-lg group hover:bg-theme2 duration-300">
+          <a href="" class="flex items-center gap-2 font-bold text-base sm:text-lg">
             <span class="text-white text-lg font-bold">Send</span>
-            <span class="group-hover:ms-2 duration-300">
-            <svg fill="none" height="16" viewBox="0 0 50 16" width="30" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h50v16.0001h-50z"/></clipPath><g clip-path="url(#a)" stroke="white"><path d="m44 11.1716v-6.34317l3.1716 3.17158z" fill="white" stroke-width="4"/><path d="m42 8h-42" stroke-width="3"/></g></svg>
+            <span class="group-hover:translate-x-3 duration-500 ease-in-out">
+           <img src="./assets/img/white_arrow_right.svg" class="">
           </span>
           </a>
         </button>
@@ -567,11 +570,11 @@
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="17px" width="17px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
           </a>
         </div>
-        <div class="flex items-center gap-3 mt-5">
-          <a href="jaavscript:;" class="size-10 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+        <div class="flex items-center gap-3 mt-5 group">
+          <a href="jaavscript:;" class="size-10 text-black inline-flex bg-theme4 group-hover:bg-theme2 group-hover:text-white transition-all duration-300 rounded-full items-center justify-center">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="17px" width="17px" xmlns="http://www.w3.org/2000/svg"><path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"></path></svg>
           </a>
-          <span class="text-xs text-theme1">Info@nuxgame.com</span>
+          <a href="javascript:;" class="text-xs text-theme1 group-hover">Info@nuxgame.com</a>
     
         </div>
       </div>
