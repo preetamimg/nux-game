@@ -8,6 +8,7 @@ module.exports = {
         'theme2': '#7c7cfe',
         'theme3': '#060048',
         'theme4': '#e8e5f4',
+        'theme5': '#f5f5f7',
       },
       keyframes: {
         wiggle: {
