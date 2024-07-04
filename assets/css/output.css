@@ -4848,6 +4848,10 @@ body{
   margin-inline-start: 0.5rem;
 }
 
+.group\/load:hover .group-hover\/load\:ms-2{
+  margin-inline-start: 0.5rem;
+}
+
 .group:hover .group-hover\:h-2\/3{
   height: 66.666667%;
 }
@@ -5500,6 +5504,10 @@ body{
 
   .md\:pt-8{
     padding-top: 2rem;
+  }
+
+  .md\:pb-20{
+    padding-bottom: 5rem;
   }
 
   .md\:text-left{
