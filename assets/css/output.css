@@ -1083,6 +1083,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -1430,10 +1434,6 @@ video {
   width: 18rem;
 }
 
-.w-8{
-  width: 2rem;
-}
-
 .w-80{
   width: 20rem;
 }
@@ -1469,14 +1469,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-52{
-  width: 13rem;
-}
-
-.w-24{
-  width: 6rem;
 }
 
 .min-w-16{
@@ -3220,6 +3212,10 @@ video {
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
 }
 
 .text-left{
