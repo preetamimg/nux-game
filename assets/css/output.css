@@ -1273,6 +1273,10 @@ video {
   height: 9rem;
 }
 
+.h-32{
+  height: 8rem;
+}
+
 .\!w-max{
   width: -moz-max-content !important;
   width: max-content !important;
@@ -4641,6 +4645,10 @@ body{
     height: 20rem;
   }
 
+  .sm\:h-36{
+    height: 9rem;
+  }
+
   .sm\:w-10{
     width: 2.5rem;
   }
@@ -4905,6 +4913,18 @@ body{
 
   .md\:w-7\/12{
     width: 58.333333%;
+  }
+
+  .md\:max-w-2xl{
+    max-width: 42rem;
+  }
+
+  .md\:max-w-5xl{
+    max-width: 64rem;
+  }
+
+  .md\:max-w-3xl{
+    max-width: 48rem;
   }
 
   .md\:grid-cols-12{
