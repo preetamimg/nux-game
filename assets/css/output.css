@@ -4841,9 +4841,18 @@ body{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:border:focus{
+  border-width: 1px;
+}
+
 .focus\:border-blue-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.focus\:border-theme1:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(68 0 145 / var(--tw-border-opacity));
 }
 
 .focus\:border-x-theme1:focus{
@@ -4868,6 +4877,11 @@ body{
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
+}
+
+.focus-visible\:outline-none:focus-visible{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .disabled\:pointer-events-none:disabled{
