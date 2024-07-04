@@ -934,10 +934,6 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
 .mb-\[10px\]{
   margin-bottom: 10px;
 }
@@ -1024,10 +1020,6 @@ video {
 
 .mt-px{
   margin-top: 1px;
-}
-
-.mt-40{
-  margin-top: 10rem;
 }
 
 .box-border{
@@ -2974,10 +2966,6 @@ video {
   padding-bottom: 3rem;
 }
 
-.pb-40{
-  padding-bottom: 10rem;
-}
-
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -3060,11 +3048,6 @@ video {
 .text-4xl\/tight{
   font-size: 2.25rem;
   line-height: 1.25;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-7xl{
@@ -4757,12 +4740,12 @@ body{
     padding-bottom: 2rem;
   }
 
-  .md\:pr-20{
-    padding-right: 5rem;
-  }
-
   .md\:pb-40{
     padding-bottom: 10rem;
+  }
+
+  .md\:pr-20{
+    padding-right: 5rem;
   }
 
   .md\:text-start{
@@ -4887,6 +4870,10 @@ body{
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-6{
