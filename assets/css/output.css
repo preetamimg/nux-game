@@ -4061,10 +4061,6 @@ body{
     order: 2;
   }
 
-  .md\:block{
-    display: block;
-  }
-
   .md\:h-screen{
     height: 100vh;
   }
@@ -4224,18 +4220,6 @@ body{
 }
 
 @media (min-width: 1280px){
-  .xl\:-right-16{
-    right: -4rem;
-  }
-
-  .xl\:-right-12{
-    right: -3rem;
-  }
-
-  .xl\:-right-10{
-    right: -2.5rem;
-  }
-
   .xl\:h-screen{
     height: 100vh;
   }
