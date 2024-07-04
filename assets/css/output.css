@@ -5947,6 +5947,10 @@ body{
     flex-direction: column;
   }
 
+  .lg\:gap-0{
+    gap: 0px;
+  }
+
   .lg\:gap-6{
     gap: 1.5rem;
   }
