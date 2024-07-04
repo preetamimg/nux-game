@@ -5917,6 +5917,10 @@ body{
     gap: 1.5rem;
   }
 
+  .lg\:gap-20{
+    gap: 5rem;
+  }
+
   .lg\:overflow-visible{
     overflow: visible;
   }
