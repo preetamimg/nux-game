@@ -2609,6 +2609,11 @@ video {
   border-bottom-left-radius: 0.5rem;
 }
 
+.rounded-b-xl{
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .rounded-e{
   border-start-end-radius: 0.25rem;
   border-end-end-radius: 0.25rem;
@@ -2632,6 +2637,11 @@ video {
 .rounded-t{
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.rounded-t-xl{
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 .rounded-bl{
@@ -3238,6 +3248,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .py-8{
@@ -4990,6 +5005,15 @@ body{
 
 .focus\:border:focus{
   border-width: 1px;
+}
+
+.focus\:border-2:focus{
+  border-width: 2px;
+}
+
+.focus\:border-black:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .focus\:border-blue-500:focus{
