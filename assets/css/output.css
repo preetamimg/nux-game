@@ -777,10 +777,6 @@ video {
   left: 42px;
 }
 
-.left-\[50\%\]{
-  left: 50%;
-}
-
 .right-0{
   right: 0px;
 }
@@ -851,6 +847,10 @@ video {
 
 .top-\[25\%\]{
   top: 25%;
+}
+
+.left-\[50\%\]{
+  left: 50%;
 }
 
 .top-\[50\%\]{
@@ -2638,6 +2638,16 @@ video {
   border-top-right-radius: 0.25rem;
 }
 
+.rounded-b-xl{
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.rounded-t-xl{
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
 .rounded-bl{
   border-bottom-left-radius: 0.25rem;
 }
@@ -2994,10 +3004,6 @@ video {
   --tw-gradient-to: #440091 var(--tw-gradient-to-position);
 }
 
-.to-theme2{
-  --tw-gradient-to: #7c7cfe var(--tw-gradient-to-position);
-}
-
 .to-transparent{
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
@@ -3267,6 +3273,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -3307,12 +3318,12 @@ video {
   padding-top: 5rem;
 }
 
-.pt-24{
-  padding-top: 6rem;
-}
-
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
 }
 
 .text-left{
@@ -5092,6 +5103,10 @@ body{
   border-width: 1px;
 }
 
+.focus\:border-2:focus{
+  border-width: 2px;
+}
+
 .focus\:border-blue-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
@@ -5100,6 +5115,11 @@ body{
 .focus\:border-theme1:focus{
   --tw-border-opacity: 1;
   border-color: rgb(68 0 145 / var(--tw-border-opacity));
+}
+
+.focus\:border-black:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .focus\:border-x-theme1:focus{
@@ -5590,10 +5610,6 @@ body{
     padding-bottom: 2.25rem;
   }
 
-  .sm\:pb-10{
-    padding-bottom: 2.5rem;
-  }
-
   .sm\:pb-36{
     padding-bottom: 9rem;
   }
@@ -5612,6 +5628,10 @@ body{
 
   .sm\:pt-\[90px\]{
     padding-top: 90px;
+  }
+
+  .sm\:pb-10{
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-left{
@@ -5800,11 +5820,6 @@ body{
     padding: 3rem;
   }
 
-  .md\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -5838,6 +5853,11 @@ body{
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .md\:pb-12{
@@ -6116,6 +6136,10 @@ body{
 
   .lg\:pb-0{
     padding-bottom: 0px;
+  }
+
+  .lg\:ps-16{
+    padding-inline-start: 4rem;
   }
 
   .lg\:text-left{
