@@ -584,7 +584,7 @@
   <!-- casino game provider  -->
   <section class=" md:pb-16 pb-10 pt-5">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
-      <div class="grid grid-cols-12 my-10 gap-5 lg:gap-10 justify-between">
+      <div class="grid grid-cols-12 my-10 gap-5 justify-between">
         <div class="w-full col-span-12 sm:col-span-4 lg:col-span-3">
           <div class="relative inline-block text-left w-full">
             <div>
@@ -595,33 +595,29 @@
                 </svg>
               </button>
             </div>
-            <div class="hidden w-full absolute left-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menu">
-              <div class="py-1" role="none">
+            <div class="hidden overflow-hidden w-full absolute left-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menu">
+              <div class="" role="none">
                 <a href="#" class="block px-4 py-2 text-sm font-semibold bg-theme1 text-white hover:bg-purple-50 hover:text-theme1" role="menuitem" tabindex="-1" id="menu-item-0">View all</a>
                 <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-1">Asia</a>
                 <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Central America</a>
+                <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Europe</a>
+                <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Middle East</a>
+                <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">North America</a>
+                <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">South America</a>
+                <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Worldwide</a>
               </div>
             </div>
           </div>
           <div class="my-6">
             <div class="inline-flex items-center">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex gap-3 items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </span>
+                  <span class="text-theme1 font-semibold">
+                    Crypto friendly
+                  </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Crypto friendly
-              </span>
             </div> 
           </div>
           <div class="">
@@ -629,181 +625,108 @@
               Categories
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative w-full flex gap-3 items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+                <input type="checkbox"
+                  class="before:content[''] peer relative h-5 min-w-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
+                  id="checkbox"  />
+                  <div class="flex justify-between items-center w-full">
+                    <span class="text-theme1 font-semibold">
+                      View All
+                    </span>
+                    <span class="text-theme1 font-bold">
+                      118
+                    </span>
+                  </div>
+              </label>
+            </div>
+            <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </span>
-              </label>
-              <div class="flex justify-between items-center w-full">
                 <span class="text-theme1 font-semibold">
-                  View All
+                  Card games
                 </span>
-                <span class="text-theme1 font-bold">
-                  118
-                </span>
-              </div>
+              </label>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Casual games
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Card games
-              </span>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Live dealers
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Casual games
-              </span>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Lotteries
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Live dealers
-              </span>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Roulette
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Lotteries
-              </span>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Slots
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Roulette
-              </span>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Virtual sports
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Slots
-              </span>
             </div>
             <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
+              <label class="relative flex items-center p-3 gap-3 rounded-full cursor-pointer" htmlFor="checkbox">
                 <input type="checkbox"
                   class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
                   id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
+                <span class="text-theme1 font-semibold">
+                  Table games
                 </span>
               </label>
-              <span class="text-theme1 font-semibold">
-                Virtual sports
-              </span>
             </div>
-            <div class="inline-flex items-center hover:bg-purple-50 rounded-full w-full py-1 px-2">
-              <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="checkbox">
-                <input type="checkbox"
-                  class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border-2 border-theme1/40 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-theme1 checked:bg-green-500 checked:before:bg-green-500 hover:before:opacity-10"
-                  id="checkbox"  />
-                <span
-                  class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                    stroke="currentColor" stroke-width="1">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </span>
-              </label>
-              <span class="text-theme1 font-semibold">
-                Table games
-              </span>
-            </div>
+
+
+
+
+
+
+
+
           </div>
           
         </div>
