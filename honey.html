@@ -473,45 +473,49 @@
           </div>
       </div>
         <div class="grid gap-4 lg:gap-6 mt-10">
-          <!-- Grid -->
+          <!-- name -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             <div>
               <label for="hs-firstname-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Your Name <span class="text-red-500">*</span></label>
               <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 border rounded-lg text-sm focus:border-x-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none bg-theme5" placeholder="Your Name">
             </div>
-
+            <!--Email-->
             <div>
               <label for="hs-lastname-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold ">Email <span class="text-red-500">*</span></label>
               <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 border rounded-lg text-sm focus:border-x-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none bg-theme5" placeholder="email@example.com">
             </div>
           </div>
-          <!-- End Grid -->
+          <!--email end -->
 
-          <!-- Grid -->
+          <!-- preffered message -->
           <div>
-            <div>
-              <label for="hs-email-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Preferred Messenge</label>
-              <div class="relative flex flex-col">
+            <div class="relative inline-block text-left w-full">
+              <div>
+                <button type="button" class="w-full justify-between inline-flex gap-x-1.5 rounded-lg text-gray-400 px-3 py-3 text-base bg-theme5 border border-gray-300 focus:border-2 focus:border-black " id="menu-button" aria-expanded="false" aria-haspopup="true">
+                  Please Choose
+                  <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden overflow-hidden w-full absolute left-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menu">
+                <div class="" role="none">
+                  <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-1">Skype</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Whatsaap</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Telegram</a>
                 
-                <select name="" id="" class="py-3 rounded-lg bg-theme5 focus-visible:outline-none focus:border focus:border-theme1 px-2">
-                  <option value="" class="hover:bg-purple-50 duration-300 px-3 text-theme3 hover:font-bold">Skype</option>
-                  <option value="" class="hover:bg-purple-50 duration-300 px-3 text-theme3 hover:font-bold">Whatsaap</option>
-                  <option value="" class="hover:bg-purple-50 duration-300 px-3 text-theme3 hover:font-bold">Telegram</option>
-                
-                </select>
+                </div>
               </div>
             </div>
-
-          
           </div>
-          <!-- End Grid -->
+          <!-- preffered message end -->
 
           <div>
             <label for="hs-about-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Message<span class="text-red-500">*</span></label>
             <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-lg border bg-theme5 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Please provide a brief summery"></textarea>
           </div>
         </div>
-        <!-- End Grid -->
+        <!-- checkbox -->
         <div class="mt-8">
           <div class="flex items-center mb-4">
             <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
@@ -581,9 +585,10 @@
 </div>
 <!--NUXGAME PARTNERS-->
 <div class="max-w-7xl mx-auto lg:px-8 px-6">
-  <div class="flex justify-between py-10 lg:gap-6">
-    <div class="lg:w-1/3 rounded-xl shadow cursor-pointer hover:scale-105 duration-500 transition-all">
-      <div class="bg-[#e8e5f4] rounded-t-xl py-8">
+  <!--1-->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 lg:gap-6 relative">
+    <div class=" rounded-xl shadow hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-8">
         <div class=" w-36 mx-auto overflow-hidden object-contain">
           <img src="./assets/img/fast-track.webp" class="size-full">
         </div>
@@ -593,10 +598,11 @@
         <h1 class="text-xl font-bold">Fast Track</h1>
         <span class="text-gray-400 text-xs">CRM</span>
       </div>
+      
     </div>
-
-    <div class="lg:w-1/3 rounded-xl shadow cursor-pointer hover:scale-105 duration-500 transition-all">
-      <div class="bg-[#e8e5f4] rounded-t-xl py-6">
+    <!--2-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-6">
         <div class=" w-36 mx-auto overflow-hidden object-contain">
           <img src="./assets/img/solitics.webp" class="">
         </div>
@@ -607,9 +613,9 @@
         <span class="text-gray-400 text-xs">CRM</span>
       </div>
     </div>
-
-    <div class="lg:w-1/3 rounded-xl shadow cursor-pointer hover:scale-105 duration-500 transition-all">
-      <div class="bg-[#e8e5f4] rounded-t-xl py-7">
+    <!--3-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-7">
         <div class=" w-36 mx-auto overflow-hidden object-contain">
           <img src="./assets/img/Jumio.webp" class="">
         </div>
@@ -620,9 +626,9 @@
         <span class="text-gray-400 text-xs">KYC&AML</span>
       </div>
     </div>
-
-    <div class="lg:w-1/3 rounded-xl shadow cursor-pointer hover:scale-105 duration-500 transition-all">
-      <div class="bg-[#e8e5f4] rounded-t-xl py-10">
+    <!--4-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
         <div class=" w-36 mx-auto overflow-hidden object-contain">
           <img src="./assets/img/trackbox.webp" class="">
         </div>
@@ -633,8 +639,152 @@
         <span class="text-gray-400 text-xs">AFFILIATE MANAGEMENT</span>
       </div>
     </div>
+    <!--5-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/cellxpert-logo.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Cellxpert</h1>
+        <span class="text-gray-400 text-xs">CEM FOE AFFILIATES</span>
+      </div>
+    </div>
+
+    <!--6-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/rapidpace-logo 1.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Rapidplace</h1>
+        <span class="text-gray-400 text-xs">CRM</span>
+      </div>
+    </div>
+    <!--7-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/WorkanovaNewLogo 2.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Workanova</h1>
+        <span class="text-gray-400 text-xs">B2C SUPPORT</span>
+      </div>
+    </div>
+    <!--8-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/Discord-Logo-3.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Discord</h1>
+        <span class="text-gray-400 text-xs">CHATS</span>
+      </div>
+    </div>
+    <!--9-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/livechat-logo.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">LiveChat</h1>
+        <span class="text-gray-400 text-xs">LiveChat</span>
+      </div>
+    </div>
+    <!--10-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-7">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/Minnit.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Minnit</h1>
+        <span class="text-gray-400 text-xs">CHATS</span>
+      </div>
+    </div>
+    <!--11-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-10">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/twilio.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Sendgrid</h1>
+        <span class="text-gray-400 text-xs">EMAIL PROVIDER</span>
+      </div>
+    </div>
+    <!--12-->
+    <div class=" rounded-xl shadow  hover:scale-105 duration-500 transition-all">
+      <div class="bg-theme4 rounded-t-xl py-2">
+        <div class=" w-36 mx-auto overflow-hidden object-contain">
+          <img src="./assets/img/Brevo.webp" class="">
+        </div>
+      </div>
+      
+      <div class="bg-white text-center rounded-b-xl py-4">
+        <h1 class="text-xl font-bold">Brevo</h1>
+        <span class="text-gray-400 text-xs">EMAIL PROVIDER</span>
+      </div>
+    </div>
+    <a href="javascript:;" class="absolute top-0 left-0 size-full"></a>
 
   </div>
 </div>
 </body>
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.getElementById('menu-button');
+const menu = document.getElementById('menu');
+
+menuButton.addEventListener('click', function() {
+const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+menuButton.setAttribute('aria-expanded', !expanded);
+menu.classList.toggle('hidden');
+menu.classList.toggle('transition-enter');
+setTimeout(() => {
+  menu.classList.toggle('transition-enter-active');
+}, 1);
+});
+
+document.addEventListener('click', function(event) {
+if (!menuButton.contains(event.target) && !menu.contains(event.target)) {
+  menuButton.setAttribute('aria-expanded', 'false');
+  menu.classList.add('hidden');
+  menu.classList.remove('transition-enter-active');
+  menu.classList.add('transition-leave');
+  setTimeout(() => {
+    menu.classList.remove('transition-leave');
+  }, 75);
+}
+});
+});
+
+</script>
 </html>
