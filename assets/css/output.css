@@ -1379,6 +1379,10 @@ video {
   height: 2rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .h-96{
   height: 24rem;
 }
@@ -1402,10 +1406,6 @@ video {
 .h-max{
   height: -moz-max-content;
   height: max-content;
-}
-
-.h-80{
-  height: 20rem;
 }
 
 .\!w-max{
