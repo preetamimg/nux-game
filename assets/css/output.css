@@ -3436,6 +3436,10 @@ video {
   padding-bottom: 9rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -3478,10 +3482,6 @@ video {
 
 .pt-24{
   padding-top: 6rem;
-}
-
-.pt-28{
-  padding-top: 7rem;
 }
 
 .pt-3{
@@ -3580,13 +3580,13 @@ video {
   line-height: 1.25;
 }
 
-.text-7xl{
-  font-size: 4.5rem;
+.text-6xl{
+  font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-8xl{
-  font-size: 6rem;
+.text-7xl{
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -5910,6 +5910,11 @@ body{
     line-height: 1;
   }
 
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -6121,6 +6126,10 @@ body{
     flex-wrap: nowrap;
   }
 
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
   .md\:justify-center{
     justify-content: center;
   }
@@ -6219,6 +6228,10 @@ body{
     padding-bottom: 2rem;
   }
 
+  .md\:pb-10{
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pb-12{
     padding-bottom: 3rem;
   }
@@ -6233,6 +6246,10 @@ body{
 
   .md\:pb-40{
     padding-bottom: 10rem;
+  }
+
+  .md\:pb-5{
+    padding-bottom: 1.25rem;
   }
 
   .md\:pe-10{
@@ -6261,6 +6278,10 @@ body{
 
   .md\:pt-16{
     padding-top: 4rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
   }
 
   .md\:pt-40{
@@ -6614,10 +6635,6 @@ body{
 
   .xl\:h-screen{
     height: 100vh;
-  }
-
-  .xl\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:p-16{
