@@ -1,0 +1,1023 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.css">
+
+</head>
+<body >
+<!-- header start   -->
+<div class="mx-auto max-w-7xl lg:px-8 w-full">
+  <!-- HEADER -->
+      <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-2 sm:py-0">
+        <nav class="relative  py-3 w-full mx-auto px-4 flex items-center justify-between " aria-label="Global">
+          <div class="flex items-center justify-between w-full">
+            <a class="flex-none text-xl font-semibold w-36 max-sm:h-12" href="./index.html" aria-label="Brand">
+              <img src="./assets/img/headerLogo.webp" alt="logo" class="size-full">
+            </a>
+            <div class="lg:hidden">
+              <button type="button" onclick="toggleSidebar()" class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="hs-collapse-open:block flex-shrink-0 hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7 gap-2">
+              <a href="jaavscript:;" class="size-7 inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+              </a>
+              <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+              </a>
+              <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="14px" width="17px" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+              </a>
+              <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+              </a>
+            </div>
+          </div>
+        
+        </nav>
+      </header>
+  <!-- END HEADER -->
+  
+  <!-- Nav -->
+      <nav class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative flex flex-row justify-between items-center gap-x-8 border-t border-theme2 py-4 sm:py-0">
+  
+          <div id="secondary-nav-toggle" class="hs-collapse hidden overflow-hidden transition-all duration-300 absolute top-16 end-0 w-full rounded-lg bg-white lg:block lg:static lg:top-0 lg:w-full lg:max-h-full lg:bg-transparent lg:overflow-visible">
+            <div class="flex flex-col py-2 sm:flex-row sm:justify-end sm:gap-y-0 sm:gap-x-9 sm:py-0">
+              <button class="relative group/flag text-theme3 flex items-center gap-2">
+                <div class="group-hover/flag:text-theme2 transition-all duration-300 font-bold text-sm">PRODUCTS</div>
+                <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                </div>
+                <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-2 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-1/2 after:h-7">
+                  <a href="./onlinecasino.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Online Casino
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./sportsbook.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Sportsbook
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./cryptocasino.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Crypto Casino
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./affiliatesystem.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Affiliate System
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="agentsystem.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Agent System
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./casinogameaggregation.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Casino Game Aggregation
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                </div>
+              </button>
+              <button class="relative group/flag text-theme3 flex items-center gap-2">
+                <div class="group-hover/flag:text-theme2 transition-all duration-300 font-bold text-sm uppercase">Solutions</div>
+                <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                </div>
+                <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-2 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-1/2 after:h-7">
+                  <a href="./websiteAPI.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Website API
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./turnkey.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Turnkey
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./legalservices.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Legal Services
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./amlkyc.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      AML & KYC
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./gameprovider.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Game Providers
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                </div>
+              </button>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./partners.html">Partners</a>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./demo.html">Demo</a>
+              <button class="relative group/flag text-theme3 flex items-center gap-2">
+                <div class="group-hover/flag:text-theme2 transition-all duration-300 font-bold text-sm uppercase">Events</div>
+                <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                </div>
+                <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-2 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-1/2 after:h-7">
+                  <a href="./icelondon.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      ICE London 2024
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./sbcsummit.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      SBC Summit 2024
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./sigmaeurope.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Sigma Europe 2024
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                </div>
+              </button>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./career.html">careers</a>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./blog.html">blog</a>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  <!-- End Nav -->
+
+  <!-- Sidebar Overlay -->
+  <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-[998] invisible transition-opacity duration-300 ease-in-out" onclick="toggleSidebar()"></div>
+
+  <!-- Sidebar -->
+  <div class="">
+  <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-white text-black transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
+    <div class="flex justify-between p-4">
+      <div class="h-8 w-16">
+        <img class="size-full" src="./assets/img/headerLogo.webp" alt="">
+      </div>
+      <button onclick="toggleSidebar()" class="p-2 text-lg">
+        ✕
+      </button>
+    </div>
+    <div class="px-4 py-2 overflow-y-auto h-full">
+      <ul>
+        <li class="py-2">
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
+            <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-bold text-theme3">
+              Product
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./onlinecasino.html" class="block font-semibold opacity-80">
+                        Online Casino
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./sportsbook.html" class="block font-semibold opacity-80">
+                        Sportsbook
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./cryptocasino.html" class="block font-semibold opacity-80">
+                        Crypto Casino
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./affiliatesystem.html" class="block font-semibold opacity-80">
+                        Affiliate System
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./agentsystem.html" class="block font-semibold opacity-80">
+                        Agent System
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./casinogameaggregation.html" class="block font-semibold opacity-80">
+                        Casino Game Aggregation
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany1">
+            <label for="mmCompany1" class="flex items-center gap-x-[2px] text-sm font-bold text-theme3">
+              Solutions
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./websiteAPI.html" class="block font-semibold opacity-80">
+                        Website API
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./turnkey.html" class="block font-semibold opacity-80">
+                        Turnkey
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./legalservices.html" class="block font-semibold opacity-80">
+                        Legal Services
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./amlkyc.html" class="block font-semibold opacity-80">
+                        AML & KYC
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./gameprovider.html" class="block font-semibold opacity-80">
+                        Game Providers
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./partners.html">Partners</a>
+        </li>
+        <li class="py-2">
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany2">
+            <label for="mmCompany2" class="flex items-center gap-x-[2px] text-sm font-bold text-theme3">
+              Events
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./icelondon.html" class="block font-semibold opacity-80">
+                        ICE London 2024
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./sbcsummit.html" class="block font-semibold opacity-80">
+                        SBC Summit 2024
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./sigmaeurope.html" class="block font-semibold opacity-80">
+                        Sigma Europe 2024
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./demo.html">Demo</a>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./career.html">Careers</a>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./blog.html">Blog</a>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./contact.html">Contact us</a>
+        </li>
+      </ul>
+      <div class="flex center py-2 md:py-0 gap-2 mb-36">
+        <a href="jaavscript:;" class="size-7 inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+        </a>
+        <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+        </a>
+        <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="14px" width="17px" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+        </a>
+        <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>  
+</div>
+  <!-- header ends -->
+
+
+</div>
+ <!-- header end  -->
+
+
+<section class="py-10">
+    <div class="max-w-7xl mx-auto lg:px-8 px-6 ">
+    <div class=" p-6">
+        <h1 class="text-4xl text-theme1 font-bold mb-4 py-6">PRIVACY POLICY</h1>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">PURPOSE OF THIS PRIVACY POLICY</h2>
+            <p class="mb-2">
+                This Privacy Policy (hereinafter, the <b>“Policy”</b>) aims to give you a clear vision and understanding on how your personal data is collected and processed through the use of this Website, including any data that can be provided through this Website in case of input of contact details during the conversation/messaging with our team on the Website or request to know more about our software and possible services.
+            </p>
+            <p>
+                Policy is committed to safeguard and protect your privacy (including data privacy and communication preferences). Thus, it is important to read this Policy together with any other Policy on this Website.
+            </p>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">1. INTRODUCTION</h2>
+            <p>
+                Nuxgame is the commercial brand operated by the group of companies which own the website <a href="https://nuxgame.com/" class="text-theme1 font-bold hover:underline">https://nuxgame.com/</a> (hereinafter, the <b>“NuxGame”</b>, <b>“we”</b>, <b>“us”</b>, <b>“our”</b> or <b>“Controller”</b> ). Nuxgame is the Controller and responsible for your personal data. The NuxGame is the “Controller” in the meaning of the of Article 4(7) of the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (hereinafter the <b>“GDPR”</b> ).
+            </p>
+            <p class="pt-3">
+                In case of any question regarding this Policy, please, contact us via email address <a href="legal@nuxgame.com." class="text-theme1 font-bold hover:underline">legal@nuxgame.com.</a>
+            </p>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">POLICY UPDATES</h2>
+            <p>
+                This Policy was last updated on September 11th, 2023.
+            </p>
+        </div>
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">THIRD PARTIES</h2>
+            <p>
+                This website may include links to third party websites and applications, clicking/proceeding the link(s) may allow third parties to automatically collect or share data about you. The NuxGame informs that we do not control these third party websites and are not responsible for their polices and/or other statements of respective third party. Thus, after leaving our website take some time to read the privacy policy and any other policy of every website you visit or planning to visit.
+            </p>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">2. THE TYPES OF COLLECTED DATA</h2>
+            <!-- <p class="font-medium">
+                The Website can be used only for lawful purposes and in accordance with these Terms, under which you agree not to use the Website in the following ways:
+            </p> -->
+            <ul class="list-inside ml-4 mb-2 flex flex-col gap-3 sm:text-base text-sm ">
+                <li>2.1.  Personal data or personal information shall mean any information about the person under which such person can be identified. Such personal information does not include removed (anonymous/anonymized) data.</li>
+                <li>2.2. The Personal data that we may collect, use, store and transfer (if applicable) can be divided on such groups:</li>
+                <li>2.2.1. Identification data. Consists of and is limited to person first, last and middle (if applicable) name.</li>
+                <li>2.2.2. Contact & Communications data. Consists of and is limited to email address, phone, skype or other means of possible contact.</li>
+                <li>2.2.3. Technical data. Consists of and is limited to your IP address, type and version of browser, time zone and location, operating system and/or device, and other technology of the devices or means to access this website.</li>
+                <li>2.2.4. Website data. Consists of and is limited to information about the usage and travel on this website.</li>
+                <li>2.3. We may collect, use and share the Aggregated Data such as statistical or demographic data for any purpose, if such need arises. The used data derived from part of your personal data but it is not considered as personal data based on GDPR due to fact it will not directly or indirectly disclose or reveal your true identity. In specific, your data will be used to calculate the overall amount (percentage) of visitors of the Website or its specific part. </li>
+                <li>2.4. We do not collect any Special (in the meaning of Article 9(1) of the GDPR) category of personal data neither any personal data in connection with criminal convictions and/or offences.</li>
+            </ul>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">COOKIES</h2>
+            <p>
+                For the detailed information regarding the type and way of Cookies use, please, follow our Cookie Policy link.
+            </p>
+        </div>
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">PROCESSING OF MINORS’ DATA</h2>
+            <p>
+                The Website is not intended for individuals under the age of 18 and we do not knowingly intend to process such data of individuals under the age of 18. If you are a parent and/or a legal guardian and found that your child had used our Website, please, contact us via available means of communication and we will immediately apply an appropriate measure(s).
+            </p>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">3. HOW IS DATA COLLECTED?</h2>
+            <!-- <p class="font-medium">
+                The Website can be used only for lawful purposes and in accordance with these Terms, under which you agree not to use the Website in the following ways:
+            </p> -->
+            <ul class="list-inside ml-4 mb-2 flex flex-col gap-3 sm:text-base text-sm ">
+                <li>3.1. We have different ways of data collections, which includes, but no limited to:</li>
+                <li>3.1.1. Information provided within our Website Contact Form and/or Website Online Chat.</li>
+                <p>In such way we collect Identification data, Contact & Communication data and etc. data, if provided by the person himself. This information is collected and obtained through the voluntary submission on our Website and will be processed in order to provide a clear answer on the query/request. </p>
+                <p>The legal basis for such processing is you consent.</p>
+                <li>3.1.2. Information obtained within use of our Website.</li>
+                <p>In such way we collect Website data and Technical data, which includes information regarding Website overview, ours and our partners products you are interested in, your dynamic IP address, browser type and operating system, referral source, etc. information. </p>
+                <p>The legal basis for such processing is monitoring and improving our Website and interaction on it.</p>
+                <li>3.1.3. Information collected via means of Third Parties and/or Publicly Available Sources.</li>
+                <p>We may collect data using services of third parties such as Analytics providers (Google Analytics which tracks and reports Website traffic) or via use of Social Media (Facebook, Linkedin, etc.) to ensure that the provided Identification data is true. </p>
+                <p>The legal basis for such processing is protection of our own and third party legal rights.</p>
+                <li>3.1.4. Information collected via means of our Cookies.</li>
+                <p>Cookies are small size text files which are automatically sent to the person device used for the access on our Website. Cookie Policy can be viewed in the respective Website Policy section following the earlier (above) provided link. </p>
+                <p>The legal basis for such processing is you consent.</p>
+                <li>3.1.5. Information collected for the record and correspondence.</li>
+                <p>We may keep and process any of the mentioned above Clause 3.1.1. - 3.1.4. personal information, where it is necessary to build a defense against any legal claims. </p>
+                <p>The legal basis for such processing is protection of our own, yours’ and third party (if applicable) legal rights.</p>
+            </ul>
+        </div>
+       
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">4. HOW IS COLLECTED DATA USED? </h2>
+            <!-- <p class="font-medium">
+                The Website can be used only for lawful purposes and in accordance with these Terms, under which you agree not to use the Website in the following ways:
+            </p> -->
+            <ul class="list-disc list-inside ml-4 mb-2 flex flex-col gap-3 sm:text-base text-sm ">
+                <p>4.1. The collected data is used only when the law allows such data usage. In common, the personal data will be used in such cases:</p>
+                <li>To contact you based on your Contact Form and/or Online Chat query (Article 6(1)(a) of the GDPR).</li>
+                <li>When we need to conduct the Non-discloser Agreement for the further Business Offer proposal (Article 6(1)(b) of the GDPR).</li>
+                <li>Where it is necessary for the legitimate interest and/or protection of our own, yours’ and third party (if applicable) legal rights but only if such interests and fundamental rights, do not override those interests and rights (Article 6(1)(d) & Article 6(1)(f) of the GDPR).</li>
+                <li>Where it will be needed to comply with other legal obligations as a Controller (Article 6(1)(c) of the GDPR).</li>
+                
+            </ul>
+            <ul class="list-disc list-inside ml-4 mb-2 flex flex-col gap-3 sm:text-base text-sm ">
+                <p class="py-4">As of the Clause 4.1. (c), we may process personal Data in our legitimate interest for the below mentioned purposes:</p>
+                <li>Collection, record, processing and performing of statistical and other analysis of obtained information with further research for the Website and its services improvements and upgrades;</li>
+                <li>Administration and development of the Website and its services;</li>
+                <li>Improvement of Website user experience, including providing the personalized services;</li>
+                <li>To contact you in relation to the made request/query with further correspondence;</li>
+                <li>To conduct profiling of you and/or your activities on the Website for the purpose of the Website and its services marketing improvement.</li>
+            </ul>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">5. PRINCIPALS OF DATA PROCESSING </h2>
+            <!-- <p class="font-medium">
+                The Website can be used only for lawful purposes and in accordance with these Terms, under which you agree not to use the Website in the following ways:
+            </p> -->
+            <ul class="list-inside ml-4 mb-2 flex flex-col gap-3 sm:text-base text-sm ">
+                <li>5.1. Your fundamental rights are fully respected; therefore, protection of your privacy is top priority of NuxGame. While processing the personal data we are following such Basic (Article 5 of the GDPR) principles:</li>
+                <li>5.1.1. <b>Lawfulness, fairness and transparency principles</b> (in the meaning of Article 5(1)(a)). We submit your personal data (if requested) to legitimate the processing as well as we guaranty a fully transparent way of data handling.</li>
+                <li>5.1.2. <b>Purpose limitation & data minimization principles</b> (in the meaning of Article 5(1)(b) & (c)). We collect and process personal data only for the legitimate and explicit purposes as explained above in this Policy. We have no intention or right to process the data incompatible with the purposes mentioned in this Policy.</li>
+                <li>5.1.3. <b>Accuracy principle</b> (in the meaning of Article 5(1)(d)). Receipted personal data is safely stored, thoroughly checked and verified with your assistance to ensure its accuracy and where it is necessary to update or make some corrections for the purpose of data processing, as well as to correct or erasure the receipt information if it is inaccurate or invalid respectively.</li>
+                <li>5.1.4. <b>Identification principle</b> (in the meaning of Article 5(1)(e)). Personal data is kept in an identifiable form which allows you to be identified by yourself and us for the required period of time for the processing purposed mentioned above.</li>
+                <li>5.1.5. Safety principle (in the meaning of Article 5(1)(f)). Personal data is securely processed via appropriate technical and/or organizational measures.</li>
+                <li>5.2. We hereby inform that your personal data is collected only for the purposes mentioned in this Policy and we have no intention to collect it further or outside the scope of this Policy. Also, we inform you that collected personal data will not be used for neither for the automated decision making nor profiling.</li>
+                <li>5.3. Without prejudice to the stated in this Policy, we neither disclose nor have intention to disclose or transmit your personal data to any third party without your consent, unless permitted or obliged by law, or by a specific contractual agreement with you.</li>
+            </ul>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">6. DATA SUBJECT RIGHTS </h2>
+            <!-- <p class="font-medium">
+                The Website can be used only for lawful purposes and in accordance with these Terms, under which you agree not to use the Website in the following ways:
+            </p> -->
+            <ul class="list-inside ml-4 mb-2 flex flex-col gap-3 sm:text-base text-sm ">
+                <li>6.1. Based on the GDPR, you have such right in connection with provided personal information:</li>
+                <li>6.1.1. To access or request a copy of your provided personal information and information related to its processing.</li>
+                <li>6.1.2. To request your personal information correction as of all and any inaccuracies and/or missing personal information.</li>
+                <li>6.1.3. To request your personal data in portable form (structured, commonly used and machine readable) for the purpose of transfer to another controller (where technically feasible).</li>
+                <li>6.1.4. To request stop and restrict all and any processing of your personal data as explicitly stated by law.</li>
+                <li>6.1.5. To object all and any processing of your personal data as explicitly stated by law.</li>
+                <li>6.1.6. To object against automated processing, including profiling, which has or may have an impact on you. </li>
+                <li>6.2. All of the rights stated in the 7.1. of this Policy may be executed by sending an email letter to the Controller email mentioned in Introduction section. Before the start of action from our side we may ask you to identify yourself in order to guaranty the protection and safety of processed personal data. </li>
+            </ul>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">OBJECTION OF PROCESSING</h2>
+            <p>
+                 You have the right to object the processing of the personal data where it is done on a lawful basis and in our legitimate interest. If we process your personal data on the basis of provided consent, you have the right to withdraw it. Nevertheless, we may still process your personal data where there are or may be other relevant lawful bases or we have compelling grounds to continue the processing of personal data in our interests, which are not overridden by your rights, interests or freedoms.
+            </p>
+        </div>
+  
+
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">DATA RETENTION AND DELETION</h2>
+            <p class="pb-5">
+                We will retain your personal information for the period necessary to contact you and/or perform contract between you and us as or for the period of our legal obligation (the period of to keep data can be longer due to regulatory obligation, as the case may be). Where your personal data is no longer needed, it will be automatically erasure.
+            </p>
+            <p>
+                To identify the appropriate retention period, we take into account: the size; quantity; nature and sensitivity of the personal data, including but not limited to the potential risks of harm from unauthorized use or disclosure of your personal data; the purposes for the personal data to be processed; and the applicable legal (regulatory) or other possible requirements.
+            </p>
+        </div>
+  
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">DATA TRANSFER</h2>
+            <p class="pb-5">We may transfer, store and process your information within our companies or share it with Service providers based outside EU and/or EEA for the purpose stated in this Policy.
+            </p>
+            <p>We take all necessary and adequate measures to keep your personal data, during the transfer, at the same secure level outside the EU and/or EEA as it is within EU and/or EEA and as it should be in accordance with this Policy. 
+            </p>
+        </div>
+  
+      
+    </div>
+  </div>
+
+</section>
+
+     <!-- footer start  -->
+      <section class="bg-[#e8e5f4]">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+      <div class="size-full py-8 sm:pt-[90px] sm:pb-[60px] border-b border-theme2">
+      <div class="grid grid-cols-12 gap-x-3 gap-y-5 sm:gap-2 md:gap-7">
+      <div class="col-span-12 lg:col-span-3 ">
+      <div class="size-full flex justify-between flex-col sm:flex-row lg:flex-col">
+      <div class="footer-logo w-28 sm:w-[142px] mb-5 sm:mb-[50px]">
+        <img class="size-full object-contain" 
+        src="./assets/img/footer-logo.png" alt="">
+      </div>
+      <div class="social-media mb-5 sm:mb-10">
+      <div class="text-lg mb-5 text-theme3 leading-[133%] uppercase font-bold">FOLLOW US</div>
+      <ul class="flex items-center">
+        <li class="me-2 group">
+          <a href="#" class="">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm-44,76a36,36,0,1,1-36-36A36,36,0,0,1,164,132Z"></path></svg>
+      
+              </div>
+          </a>
+        </li>
+        <li class="me-2 group">
+          <a href="#">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+            </div>
+          </a>
+        </li>
+        <li class="me-2 group">
+          <a href="#">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+            </div>
+          </a>
+        </li>
+        <li class=" group">
+          <a href="#">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      </div>
+      <div class="contact-us">
+        <div class="text-theme3 text-lg leading-[133%] uppercase mb-5 font-bold">
+          CONTACT US
+        </div>
+        <div class="">
+          <a href="" class="text-sm leading-6 text-theme3 hover:text-theme2">
+            info@nuxgame.com</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-span-6 sm:col-span-2 lg:col-span-2">
+        <div class="size-full">
+        <div class="text-theme3 text-lg leading-[133%] uppercase font-bold mb-5">
+          MENU
+        </div>
+        <ul>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Partners</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Providers</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Demo</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="./blog.html" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Blog</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="./contact.html" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Contact Us</a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+      <div class="col-span-6 sm:col-span-3 lg:col-span-3">
+        <div class="size-full">
+        <div class="text-theme3 text-lg leading-[133%] uppercase font-bold mb-5">
+          INFO
+          </div>
+        <ul>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Terms and Conditions</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Privacy Policy</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Cookie Policy</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Responsible Gambling</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Careers</a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+      <div class="col-span-12 sm:col-span-7 lg:col-span-4">
+        <div class="size-full">
+        <div class="text-theme3 text-lg leading-[133%] uppercase font-bold mb-5">
+          GUIDES
+          </div>
+        <ul>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              How to Start an Online Casino</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              How to Start an Online Betting Business</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Top Gaming Licenses: Overview</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Curacao Gaming License: Complete Review</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Understanding Online Casino Business Models: How Online Casinos Work and Business Opportunities
+            </a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+      </div>
+      </div>
+        </div>
+      
+      
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+          <div class="size-full py-5 sm:py-9 border-b border-theme2">
+          <div class="swiper mySwiper2 before:bg-gradient-to-r before:from-[#e8e5f4] before:to-transparent before:w-32 before:z-10 before:inset-0 before:absolute before:pointer-events-none after:bg-gradient-to-l after:from-[#e8e5f4] after:to-transparent after:w-32 after:z-10 after:inset-0 after:absolute after:pointer-events-none after:left-auto swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper-wrapper !ease-linear">
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/sigma-logo.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/GambleAware-logo.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/antilliphone.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/PCI.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="h-83 flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/dmca.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex items-center justify-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/eu_gdpr_compliant-logo.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex items-center justify-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/respon.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex items-center justify-center overflow-hidden !h-24">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/gaming_labs.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        </div>
+      
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+          <div class="size-full py-5 sm:py-10">
+          <div class="grid grid-cols-12 gap-1 sm:gap-5">
+              <div class="col-span-12 sm:col-span-4 text-slate-500 text-xs leading-6 text-center sm:text-start">
+                The website is owned and operated by NuxGame brand
+            </div>
+            <div class="col-span-12 sm:col-span-4 text-slate-500 text-xs leading-6  text-center">
+              © 2018-2024 NuxGame. All rights reserved.
+            </div>
+            <div class="col-span-12 sm:col-span-4">
+            <div class=" flex items-center justify-center sm:justify-end">
+              <div class="me-4 h-6">
+                <img class="size-full object-cover" src="./assets/img/18_years.svg" alt="">
+              </div>
+              <div class="h-6">
+                <img class="size-full object-cover" src="./assets/img/lock-img.svg" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer end  -->
+
+  <script src="./assets/libs/swiper/swiper-bundle.js"></script>
+
+  <!-- header script  -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebar-overlay");
+    sidebar.classList.toggle("translate-x-full");
+    overlay.classList.toggle("invisible");
+    }
+  </script>
+  <!-- end  -->
+
+<!-- footer swiper  -->
+
+<script>
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop:true,
+    speed:5000,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        961: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView:7 ,
+          spaceBetween: 40,
+        },
+      }
+ });
+</script>
+
+
+ <!-- footer swiper end  -->
+
+ <script>
+  var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop:true,
+    speed:8000,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        961: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView:5 ,
+          spaceBetween: 60,
+        },
+      }
+ });
+</script>
+
+   <!-- blog script -->
+   <script>
+    var swiper = new Swiper(".myBlog", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        320:{
+           
+           slidesPerView: 1.2,
+           spaceBetween: 10,
+         },
+        450:{
+           
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        750: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
+    <!-- end -->
+
+</body>
+</html>
