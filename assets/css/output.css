@@ -1237,6 +1237,10 @@ video {
   height: 6rem !important;
 }
 
+.\!h-auto{
+  height: auto !important;
+}
+
 .\!h-max{
   height: -moz-max-content !important;
   height: max-content !important;
@@ -3082,11 +3086,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -3129,10 +3128,6 @@ video {
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pt-7{
-  padding-top: 1.75rem;
 }
 
 .text-left{
