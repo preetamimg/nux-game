@@ -1,0 +1,1274 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.css">
+
+</head>
+<body>
+<!-- header start  -->
+<div class="mx-auto max-w-7xl lg:px-8 w-full">
+  <!-- HEADER -->
+      <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-2 sm:py-0">
+        <nav class="relative  py-3 w-full mx-auto px-4 flex items-center justify-between " aria-label="Global">
+          <div class="flex items-center justify-between w-full">
+            <a class="flex-none text-xl font-semibold w-36 max-sm:h-12" href="./index.html" aria-label="Brand">
+              <img src="./assets/img/headerLogo.webp" alt="logo" class="size-full">
+            </a>
+            <div class="lg:hidden">
+              <button type="button" onclick="toggleSidebar()" class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="hs-collapse-open:block flex-shrink-0 hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7 gap-2">
+              <a href="jaavscript:;" class="size-7 inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+              </a>
+              <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+              </a>
+              <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="14px" width="17px" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+              </a>
+              <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <a href="javascript:;" class="relative group/flag ml-5 text-sm font-bold text-theme3 flex items-center gap-1">
+            <div class="group-hover/flag:text-theme2 transition-all duration-300">EN</div>
+            <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+            </div>
+            <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-60 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-full after:h-7">
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/pt-br.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Português do Brasil
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/fr.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Français
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/es.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Español
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/pt.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Português
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/ru.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Русский
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/tr.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Türkçe
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+              <button class="flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <div class="">
+                    <img src="./assets/img/de.svg" alt="">
+                  </div>
+                  <div class="text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                    Deutsch
+                  </div>
+                </div>
+                <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                </div>
+              </button>
+            </div>
+          </a>
+        </nav>
+      </header>
+  <!-- END HEADER -->
+  
+  <!-- Nav -->
+      <nav class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative flex flex-row justify-between items-center gap-x-8 border-t border-theme2 py-4 sm:py-0">
+  
+          <div id="secondary-nav-toggle" class="hs-collapse hidden overflow-hidden transition-all duration-300 absolute top-16 end-0 w-full rounded-lg bg-white lg:block lg:static lg:top-0 lg:w-full lg:max-h-full lg:bg-transparent lg:overflow-visible">
+            <div class="flex flex-col py-2 sm:flex-row sm:justify-end sm:gap-y-0 sm:gap-x-9 sm:py-0">
+              <button class="relative group/flag text-theme3 flex items-center gap-2">
+                <div class="group-hover/flag:text-theme2 transition-all duration-300 font-bold text-sm">PRODUCTS</div>
+                <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                </div>
+                <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-2 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-1/2 after:h-7">
+                  <a href="./onlinecasino.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Online Casino
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./sportsbook.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Sportsbook
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./cryptocasino.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Crypto Casino
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./affiliatesystem.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Affiliate System
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="agentsystem.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Agent System
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./casinogameaggregation.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Casino Game Aggregation
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                </div>
+              </button>
+              <button class="relative group/flag text-theme3 flex items-center gap-2">
+                <div class="group-hover/flag:text-theme2 transition-all duration-300 font-bold text-sm uppercase">Solutions</div>
+                <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                </div>
+                <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-2 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-1/2 after:h-7">
+                  <a href="./websiteAPI.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Website API
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./turnkey.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Turnkey
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./legalservices.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Legal Services
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./amlkyc.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      AML & KYC
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./gameprovider.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Game Providers
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                </div>
+              </button>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./partners.html">Partners</a>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./demo.html">Demo</a>
+              <button class="relative group/flag text-theme3 flex items-center gap-2">
+                <div class="group-hover/flag:text-theme2 transition-all duration-300 font-bold text-sm uppercase">Events</div>
+                <div class="group-hover/flag:rotate-180 transition-all duration-300 group-hover/flag:text-theme2">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                </div>
+                <div class="opacity-0 invisible group-hover/flag:visible group-hover/flag:opacity-100 absolute flex flex-col gap-3 top-10 rounded-b-lg p-5 bg-white z-10 -left-2 lang-dropdown w-72 shadow-2xl after:absolute after:bg-transparent after:-top-6 after:left-0 after:w-1/2 after:h-7">
+                  <a href="./icelondon.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      ICE London 2024
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./sbcsummit.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      SBC Summit 2024
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                  <a href="./sigmaeurope.html" class="flex items-center justify-between group">
+                    <div class="text-theme3 text-sm group-hover:text-theme2 font-semibold group-hover:font-bold transition-all duration-300">
+                      Sigma Europe 2024
+                    </div>
+                    <div class="invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 text-theme2">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="15px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+                    </div>
+                  </a>
+                </div>
+              </button>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./career.html">careers</a>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./blog.html">blog</a>
+              <a class="text-sm uppercase font-bold text-theme3 hover:text-theme2 sm:border-b-2 border-b-transparent py-2 sm:py-3.5" href="./contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  <!-- End Nav -->
+
+  <!-- Sidebar Overlay -->
+  <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-[998] invisible transition-opacity duration-300 ease-in-out" onclick="toggleSidebar()"></div>
+
+  <!-- Sidebar -->
+  <div class="">
+  <div id="sidebar" class="fixed top-0 right-0 h-full w-64 bg-white text-black transform translate-x-full transition-transform duration-300 ease-in-out z-[1000]">
+    <div class="flex justify-between p-4">
+      <div class="h-8 w-16">
+        <img class="size-full" src="./assets/img/headerLogo.webp" alt="">
+      </div>
+      <button onclick="toggleSidebar()" class="p-2 text-lg">
+        ✕
+      </button>
+    </div>
+    <div class="px-4 py-2 overflow-y-auto h-full">
+      <ul>
+        <li class="py-2">
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
+            <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-bold text-theme3">
+              Product
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./onlinecasino.html" class="block font-semibold opacity-80">
+                        Online Casino
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./sportsbook.html" class="block font-semibold opacity-80">
+                        Sportsbook
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./cryptocasino.html" class="block font-semibold opacity-80">
+                        Crypto Casino
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./affiliatesystem.html" class="block font-semibold opacity-80">
+                        Affiliate System
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./agentsystem.html" class="block font-semibold opacity-80">
+                        Agent System
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./casinogameaggregation.html" class="block font-semibold opacity-80">
+                        Casino Game Aggregation
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany1">
+            <label for="mmCompany1" class="flex items-center gap-x-[2px] text-sm font-bold text-theme3">
+              Solutions
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./websiteAPI.html" class="block font-semibold opacity-80">
+                        Website API
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./turnkey.html" class="block font-semibold opacity-80">
+                        Turnkey
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./legalservices.html" class="block font-semibold opacity-80">
+                        Legal Services
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 12H9C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12Z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./amlkyc.html" class="block font-semibold opacity-80">
+                        AML & KYC
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./gameprovider.html" class="block font-semibold opacity-80">
+                        Game Providers
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./partners.html">Partners</a>
+        </li>
+        <li class="py-2">
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany2">
+            <label for="mmCompany2" class="flex items-center gap-x-[2px] text-sm font-bold text-theme3">
+              Events
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 9v4"></path><path d="M12 16v.01"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./icelondon.html" class="block font-semibold opacity-80">
+                        ICE London 2024
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path><path d="M12 15l1.57-3.43L17 10l-3.43-1.57L12 5l-1.57 3.43L7 10l3.43 1.57z"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./sbcsummit.html" class="block font-semibold opacity-80">
+                        SBC Summit 2024
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex h-4 w-4 flex-none">
+                      <svg class="h-3 w-3 opacity-90" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="./sigmaeurope.html" class="block font-semibold opacity-80">
+                        Sigma Europe 2024
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./demo.html">Demo</a>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./career.html">Careers</a>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./blog.html">Blog</a>
+        </li>
+        <li class="py-2">
+          <a class="text-sm font-bold text-theme3" href="./contact.html">Contact us</a>
+        </li>
+      </ul>
+      <div class="flex center py-2 md:py-0 gap-2 mb-36">
+        <a href="jaavscript:;" class="size-7 inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+        </a>
+        <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+        </a>
+        <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="14px" width="17px" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+        </a>
+        <a href="jaavscript:;" class="size-7 text-black inline-flex bg-theme4 hover:bg-theme2 hover:text-white transition-all duration-300 rounded-full items-center justify-center">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>  
+</div>
+  <!-- header ends -->
+
+
+</div>
+ <!-- header end  -->
+
+   <!-- hero -->
+   <div class="h-max relative sm:pb-10 xl:pb-0 w-full bg-[#f5f5f7]">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+    <div class="flex flex-wrap justify-between items-center md:gap-0 gap-4 mb-10 pt-24 pb-12">
+        <div class="lg:w-1/2 w-full">
+          <h1 class="text-theme3 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">PRE-BUILT CASINO DEMO TEMPLATES</h1>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <p class="md:text-xl text-base max-w-lg-96 text-slate-500 sm:mt-10 mt-5 mb-3">
+            Try our beautiful and truly unique pre-built templates for all your business needs. Choose from our extensive selection of pre-designed, regional-specific templates, each meticulously crafted to meet the high standards of the gaming sector. Elevate your business today with our solution!
+          </p>
+        </div>
+      </div>
+      <div class="absolute top-3 left-0 lg:ps-16   flex">
+        <nav class="w-full rounded-md" aria-label="breadcrumb">
+          <ol class="list-reset ms-2 flex items-center">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm font-semibold text-black/60 transition duration-200 hover:text-theme1"
+                >Home</a
+              >
+            </li>
+            <li>
+              <span class="mx-2 text-black/60 dark:text-white/60">/</span>
+            </li>
+            <li>
+              <div
+                class="text-sm font-semibold text-black/60 transition duration-200"
+                >Demo</div
+              >
+            </li>
+          </ol>
+        </nav>
+       </div>
+      </div>
+    </div>
+   <!-- hero-end -->
+
+   <!-- demo Image section start  -->
+    <section class="h-max pb-10 xl:pb-0 w-full">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full relative">
+            <div class="md:h-[600px] sm:h-[500px] overflow-hidden rounded-xl">
+                <img class=" size-full object-cover blur-md" src="./assets/img/1-demo-image.webp" alt="">
+            </div>            
+            <div class="btn absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full px-6 md:px-14 py-2">
+                <div class="text-nowrap">
+                  <a href="" class="flex items-center gap-2 font-bold text-base sm:text-lg group/load">
+                    <span><svg class="h-6 w-6 text-theme1" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="256" r="64"></circle><path d="M490.84 238.6c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.66 96c-42.52 0-84.33 12.15-124.27 36.11-40.73 24.43-77.63 60.12-109.68 106.07a31.92 31.92 0 0 0-.64 35.54c26.41 41.33 60.4 76.14 98.28 100.65C162 402 207.9 416 255.66 416c46.71 0 93.81-14.43 136.2-41.72 38.46-24.77 72.72-59.66 99.08-100.92a32.2 32.2 0 0 0-.1-34.76zM256 352a96 96 0 1 1 96-96 96.11 96.11 0 0 1-96 96z"></path></svg></span>
+                    <span class="text-theme1 ">Live Demo</span>
+                    <span class="group-hover/load:ms-2 duration-300">
+                    <svg fill="none" height="16" viewBox="0 0 50 16" width="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h50v16.0001h-50z"/></clipPath><g clip-path="url(#a)" stroke="#440090"><path d="m44 11.1716v-6.34317l3.1716 3.17158z" fill="#c4c4c4" stroke-width="4"/><path d="m42 8h-42" stroke-width="3"/></g></svg>
+                  </span>
+                  </a>
+                </div>
+              </div>
+        </div>
+    </section>
+   <!-- demo Image section End  -->
+
+<!-- feature card  -->
+
+<div class="max-w-7xl mx-auto lg:px-8 px-6 md:py-16 py-10">
+  <ul class="
+  flex flex-wrap md:pt-8 text-center md:text-left gap-y-6 justify-center items-stretch
+">
+<div class="lg:w-4/12 sm:w-1/2 w-full sm:p-6 sm:px-6 py-6">
+  <div class="relative block h-full bg-white shadow-md rounded-lg rounded-br-none p-6 pt-10 group">
+      <div class="font-bold text-slate-900 md:text-xl text-lg relative before:absolute before:left-0 before:top-[-16px] before:h-[4px] before:w-[40px] before:bg-gradient-to-r before:from-theme1 before:to-theme2 ">Large portfolio of top performing content</div>
+      <div class="text-black text-sm mt-2 text-ellipsis line-clamp-4 ">
+        Entertain players with an expansive catalogue of leading providers from around the world.
+      </div>
+      <div class="sm:h-16 sm:w-16 h-14 w-14 bg-white rounded-lg rounded-br-none absolute right-[30px] top-[-30px] p-3 shadow-md duration-300 group-hover:bg-theme1 *:group-hover:scale-125 *:duration-300 ">
+         <img src="./assets/img/feature-1.webp" alt="">
+      </div>
+  </div>
+</div>
+
+<div class="lg:w-4/12 sm:w-1/2 w-full sm:p-6 sm:px-6 py-6">
+<div class="relative block h-full bg-white shadow-md rounded-lg rounded-br-none p-6 pt-10 group">
+    <div class="font-bold text-slate-900 md:text-xl text-lg relative before:absolute before:left-0 before:top-[-16px] before:h-[4px] before:w-[40px] before:bg-gradient-to-r before:from-theme1 before:to-theme2 ">Responsive design across desktop and mobile</div>
+    <div class="text-black text-sm mt-2 text-ellipsis line-clamp-4 ">
+      Overcome UX and UI challenges with seamless integration across all platforms
+    </div>
+    <div class="sm:h-16 sm:w-16 h-14 w-14 bg-white rounded-lg rounded-br-none absolute right-[30px] top-[-30px] p-3 shadow-md duration-300 group-hover:bg-theme2 *:group-hover:scale-125 *:duration-300 ">
+       <img src="./assets/img/feature2.webp" alt="">
+    </div>
+</div>
+</div>
+<div class="lg:w-4/12 sm:w-1/2 w-full sm:p-6 sm:px-6 py-6">
+  <div class="relative block h-full bg-white shadow-md rounded-lg rounded-br-none p-6 pt-10 group">
+      <div class="font-bold text-slate-900 md:text-xl text-lg relative before:absolute before:left-0 before:top-[-16px] before:h-[4px] before:w-[40px] before:bg-gradient-to-r before:from-theme1 before:to-theme2 ">Efficient back office</div>
+      <div class="text-black text-sm mt-2 text-ellipsis line-clamp-4 ">
+        Gain a clear overview of essential data and analytics through an enhanced dashboard
+      </div>
+      <div class="sm:h-16 sm:w-16 h-14 w-14 bg-white rounded-lg rounded-br-none absolute right-[30px] top-[-30px] p-3 shadow-md duration-300 group-hover:bg-theme1 *:group-hover:scale-125 *:duration-300 ">
+         <img src="./assets/img/feature-3.webp" alt="">
+      </div>
+  </div>
+</div>
+
+</ul>
+
+  
+</div>
+ <!-- feature card end  -->
+
+ <!-- online casino  -->
+ <section class="d:py-20 py-10 relative ">
+    <section class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+      <div class="bg-white shadow-2xl p-6 sm:p-10 md:p-12 lg:p-16 relative rounded-3xl overflow-hidden">
+        <div class="md:gap-0 gap-4">
+          <h1 class="text-theme3 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            ONLINE CASINO SOFTWARE SOLUTIONS
+          </h1>
+          <p class="md:w-1/2 md:text-xl text-base max-w-lg-96 text-slate-500 mt-6">
+            Discover endless opportunities with NuxGame's comprehensive gaming software solutions
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
+          <div class="bg-theme5 rounded-xl p-8 group relative">
+            <div class="flex items-center gap-10">
+              <div class="min-w-16 sm:min-w-20 w-16 sm:w-20 group-hover:scale-125 transition-all duration-700">
+                <img src="./assets/img/Website_API.webp" alt="" class="size-full">
+              </div>
+              <div class="text-2xl sm:text-3xl text-theme3 font-bold">
+                Website API
+              </div>
+            </div>
+            <div class="my-5 text-black text-base sm:text-xl">
+              Integrate sports and casino content into your website using our scalable and practical solution
+            </div>
+            <a href="javascript:;" class="absolute size-full top-0 left-0"></a>
+          </div>
+          <div class="bg-theme5 rounded-xl p-8 group relative">
+            <div class="flex items-center gap-10">
+              <div class="min-w-16 sm:min-w-20 w-16 sm:w-20 group-hover:scale-125 transition-all duration-700">
+                <img src="./assets/img/Turnkey_(1).webp" alt="" class="size-full">
+              </div>
+              <div class="text-2xl sm:text-3xl text-theme3 font-bold">
+                Turnkey
+              </div>
+            </div>
+            <div class="my-5 text-black text-base sm:text-xl">
+              Get a fully-fledged platform within 48 hours - embrace the turnkey solution to start growing your business
+            </div>
+            <a href="javascript:;" class="absolute size-full top-0 left-0"></a>
+          </div>
+          <div class="bg-theme5 rounded-xl p-8 group relative">
+            <div class="flex items-center gap-10">
+              <div class="min-w-16 sm:min-w-20 w-16 sm:w-20 group-hover:scale-125 transition-all duration-700">
+                <img src="./assets/img/Legal_Services_(2).webp" alt="" class="size-full">
+              </div>
+              <div class="text-2xl sm:text-3xl text-theme3 font-bold">
+                Legal Services
+              </div>
+            </div>
+            <div class="my-5 text-black text-base sm:text-xl">
+              Legal Services offer high-quality, adaptable legal support. It delivers flexible and tailored support and is backed by years of practical experience
+            </div>
+            <a href="javascript:;" class="absolute size-full top-0 left-0"></a>
+          </div>
+        </div>
+        <div class="absolute bottom-0 hidden lg:block right-0 animate-[wiggle_4s_linear_infinite] [animation-duration:5s] rotate-[22deg]">
+          <div class="w-96">
+            <img src="./assets/img/big-traingle.svg" class="size-full">
+          </div>
+          <div class="size-36 absolute -right-6 -bottom-5">
+            <img src="./assets/img/mini-triangle.svg" class="size-full">
+          </div>
+          <div class="absolute -top-6 right-6 size-8">
+            <img src="./assets/img/ball.svg " class="size-full">
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </section>
+  <!-- online casino end  -->
+
+
+<!-- contact form start  -->
+
+<div class="max-w-7xl mx-auto lg:px-8 px-6 py-10">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-between ">
+    <div class="bg-white shadow-md rounded-lg order-2">
+        <div class="flex flex-col border rounded-xl px-4 sm:px-6 lg:px-8 py-8">
+         <form>
+          <div class="rounded-xl bg-theme5 shadow px-2 py-2">
+              <div class="flex gap-3">
+                <div>
+                  <svg class="pulse" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                    <circle cx="23" cy="23" r="23" fill="#E8E5F4"></circle>
+                    <path d="M23 32C24.78 32 26.5201 31.4722 28.0001 30.4832C29.4802 29.4943 30.6337 28.0887 31.3149 26.4442C31.9961 24.7996 32.1743 22.99 31.8271 21.2442C31.4798 19.4984 30.6226 17.8947 29.364 16.636C28.1053 15.3774 26.5016 14.5202 24.7558 14.1729C23.01 13.8257 21.2004 14.0039 19.5558 14.6851C17.9113 15.3663 16.5057 16.5198 15.5168 17.9999C14.5278 19.4799 14 21.22 14 23C14 25.3869 14.9482 27.6761 16.636 29.364C18.3239 31.0518 20.613 32 23 32ZM23 17.372C23.2373 17.372 23.4693 17.4424 23.6667 17.5742C23.864 17.7061 24.0178 17.8935 24.1087 18.1128C24.1995 18.3321 24.2232 18.5733 24.1769 18.8061C24.1306 19.0389 24.0163 19.2527 23.8485 19.4205C23.6807 19.5884 23.4669 19.7026 23.2341 19.7489C23.0013 19.7952 22.76 19.7715 22.5408 19.6807C22.3215 19.5898 22.1341 19.436 22.0022 19.2387C21.8704 19.0413 21.8 18.8093 21.8 18.572C21.8 18.2537 21.9264 17.9485 22.1515 17.7235C22.3765 17.4984 22.6817 17.372 23 17.372ZM21.8 23C21.8 22.6817 21.9264 22.3765 22.1515 22.1515C22.3765 21.9264 22.6817 21.8 23 21.8C23.3183 21.8 23.6235 21.9264 23.8485 22.1515C24.0736 22.3765 24.2 22.6817 24.2 23V27.8C24.2 28.1183 24.0736 28.4235 23.8485 28.6485C23.6235 28.8736 23.3183 29 23 29C22.6817 29 22.3765 28.8736 22.1515 28.6485C21.9264 28.4235 21.8 28.1183 21.8 27.8V23Z" fill="#060048"></path>
+                    </svg>
+                </div>
+                <div class="flex items-end">
+                  <p class="text-sm font-bold text-gray-500">
+                    Please fill out the form in English for faster processing.
+                     Our manager will contact you as soon as  
+                     <span class="relative mr-1">
+                      possible
+                     </span>
+                     <span class="absolute mt-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M14 7C14 10.8649 10.8678 13.9983 7.00321 14H6.92767C6.58835 13.9965 6.24972 13.9685 5.91442 13.9163C5.63985 13.8739 5.3681 13.8148 5.10067 13.7395C3.63235 13.3252 2.33952 12.4427 1.41882 11.2261C0.498114 10.0096 -8.22007e-05 8.52566 1.0173e-08 7C1.0173e-08 3.13454 3.13308 2.79262e-06 7 2.79262e-06H7.00321C7.95553 -0.000849134 8.89795 0.193227 9.77244 0.570282C10.6469 0.947337 11.435 1.49939 12.0881 2.19246C13.3165 3.49168 14.0007 5.21202 14 7Z" fill="white"></path>
+                        <path d="M5.23533 4.9185V5.2335H4.21771L1.35938 2.85671C1.53605 2.61637 1.72798 2.38762 1.93396 2.17188L5.23533 4.9185Z" fill="#C8102E"></path>
+                        <path d="M12.6506 2.8693L9.80892 5.2318H8.76562V4.93955L12.0784 2.18359L12.0871 2.19264C12.2781 2.39393 12.4567 2.60655 12.622 2.82934L12.6506 2.8693Z" fill="#C8102E"></path>
+                        <path d="M5.23504 8.76562V9.08062L1.93367 11.8278C1.9045 11.7987 1.87533 11.7672 1.84792 11.7365C1.67425 11.5479 1.51116 11.3497 1.35938 11.143L4.21771 8.76562H5.23504Z" fill="#C8102E"></path>
+                        <path d="M12.6509 11.1299C12.475 11.3704 12.2838 11.5994 12.0787 11.8156L8.76562 9.05933V8.76562H9.80892L12.6509 11.1299Z" fill="#C8102E"></path>
+                        <path d="M2.79731 5.23511H0.226562C0.372608 4.67504 0.588172 4.13544 0.868229 3.62891L2.79731 5.23511Z" fill="#012169"></path>
+                        <path d="M2.73927 8.76953L0.847521 10.3428C0.577182 9.84564 0.368648 9.3173 0.226562 8.76953H2.73927Z" fill="#012169"></path>
+                        <path d="M5.23742 10.2461V13.7753C5.19308 13.7639 5.14992 13.7519 5.10471 13.7394C4.18749 13.4811 3.33292 13.0376 2.59375 12.4362L5.23742 10.2461Z" fill="#012169"></path>
+                        <path d="M5.22929 0.226562V3.70031L2.625 1.53381C3.39139 0.919579 4.27884 0.47411 5.22929 0.226562Z" fill="#012169"></path>
+                        <path d="M11.4099 1.56619L8.76562 3.75806V0.226562L8.80558 0.236771C9.7579 0.490813 10.6455 0.943919 11.4099 1.56619Z" fill="#012169"></path>
+                        <path d="M13.774 5.2344H11.2656L13.153 3.66406C13.4231 4.16031 13.6316 4.68765 13.774 5.2344Z" fill="#012169"></path>
+                        <path d="M11.4387 12.4204C10.6587 13.0599 9.74945 13.5227 8.77344 13.7769V10.2031L11.4387 12.4204Z" fill="#012169"></path>
+                        <path d="M13.7781 8.76953C13.6391 9.30407 13.4369 9.82016 13.1758 10.3069L11.3281 8.76953H13.7781Z" fill="#012169"></path>
+                        <path d="M14 6.92679V7.0665C13.997 7.3929 13.9714 7.71869 13.9233 8.04154H8.04154V13.923C7.72072 13.9709 7.39698 13.9966 7.07263 14H6.92679C6.60232 13.9967 6.27848 13.9708 5.95758 13.9227V8.04154H0.077C0.0291382 7.72033 0.00341092 7.3962 0 7.07146C0 7.02567 0 6.97958 0 6.9335C0.00301738 6.60701 0.0286482 6.28112 0.0767083 5.95817H5.95846V0.077C6.26388 0.0313378 6.57195 0.00561672 6.88071 0L7.10646 0C7.40111 0.00421284 7.69521 0.0270081 7.987 0.06825L8.04154 0.0764167V5.95817H13.923C13.9709 6.27889 13.9966 6.60253 14 6.92679Z" fill="#C8102E"></path>
+                      </svg>
+                     </span>
+                  </p>
+                </div>
+              </div>
+          </div>
+            <div class="grid gap-4 lg:gap-6 mt-10">
+              <!-- name -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                <div>
+                  <label for="hs-firstname-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Your Name <span class="text-red-500">*</span></label>
+                  <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 border rounded-lg text-sm focus:border-x-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none bg-theme5" placeholder="Your Name">
+                </div>
+                <!--Email-->
+                <div>
+                  <label for="hs-lastname-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold ">Email <span class="text-red-500">*</span></label>
+                  <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 border rounded-lg text-sm focus:border-x-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none bg-theme5" placeholder="email@example.com">
+                </div>
+              </div>
+              <!--email end -->
+    
+              <!-- preffered message -->
+              <div>
+                <div class="relative inline-block text-left w-full">
+                  <div>
+                    <button type="button" class="w-full justify-between inline-flex gap-x-1.5 rounded-lg text-gray-400 px-3 py-3 text-base bg-theme5 border border-gray-300 focus:border-2 focus:border-black " id="form-Drop" aria-expanded="false" aria-haspopup="true">
+                      Please Choose
+                      <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="hidden overflow-hidden w-full absolute left-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="form-Drop" tabindex="-1" id="menu">
+                    <div class="" role="none">
+                      <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-1">Skype</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Whatsaap</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-theme1 font-semibold hover:bg-purple-50" role="menuitem" tabindex="-1" id="menu-item-2">Telegram</a>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- preffered message end -->
+    
+              <div>
+                <label for="hs-about-contacts-1" class="block mb-2 text-base lg:text-lg text-black font-bold">Message<span class="text-red-500">*</span></label>
+                <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-lg border bg-theme5 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Please provide a brief summery"></textarea>
+              </div>
+            </div>
+            <!-- checkbox -->
+            <div class="mt-8">
+              <div class="flex items-center mb-4">
+                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">
+                  By ticking this box, you agree to NuxGame's
+                  <span>
+                    <a class="" href="javascript:;">
+                      Privacy Policy
+                    </a>
+                  </span>
+                  
+                </label>
+              </div>
+            </div>
+            <button class="bg-theme1 px-10 py-2 rounded-lg group hover:bg-theme2 duration-300">
+              <a href="" class="flex items-center gap-2 font-bold text-base sm:text-lg">
+                <span class="text-white text-lg font-bold">Send</span>
+                <span class="group-hover:translate-x-3 duration-500 ease-in-out">
+               <img src="./assets/img/white_arrow_right.svg" class="">
+              </span>
+              </a>
+            </button>
+         </form>
+        </div>
+      
+        </div>
+    <div class="lg:w-1/2 w-full flex">
+        <span><svg class=" size-10 md:size-16 text-theme3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg"><path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"></path></svg></span>
+        <h1 class="text-theme3 font-bold text-4xl relative sm:text-5xl md:text-6xl lg:text-6xl">Didn’t find <br> 
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-theme1 to-theme2"> a suitable template?</span></h1>
+      </div>
+ </div>
+</div>
+
+ <!-- contact form end  -->
+
+     <!-- footer start  -->
+      <section class="bg-[#e8e5f4]">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+      <div class="size-full py-8 sm:pt-[90px] sm:pb-[60px] border-b border-theme2">
+      <div class="grid grid-cols-12 gap-x-3 gap-y-5 sm:gap-2 md:gap-7">
+      <div class="col-span-12 lg:col-span-3 ">
+      <div class="size-full flex justify-between flex-col sm:flex-row lg:flex-col">
+      <div class="footer-logo w-28 sm:w-[142px] mb-5 sm:mb-[50px]">
+        <img class="size-full object-contain" 
+        src="./assets/img/footer-logo.png" alt="">
+      </div>
+      <div class="social-media mb-5 sm:mb-10">
+      <div class="text-lg mb-5 text-theme3 leading-[133%] uppercase font-bold">FOLLOW US</div>
+      <ul class="flex items-center">
+        <li class="me-2 group">
+          <a href="#" class="">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm-44,76a36,36,0,1,1-36-36A36,36,0,0,1,164,132Z"></path></svg>
+      
+              </div>
+          </a>
+        </li>
+        <li class="me-2 group">
+          <a href="#">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+            </div>
+          </a>
+        </li>
+        <li class="me-2 group">
+          <a href="#">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+            </div>
+          </a>
+        </li>
+        <li class=" group">
+          <a href="#">
+            <div class="size-8 sm:size-10 bg-[#f5f5f7] rounded-full flex items-center justify-center group-hover:bg-theme2 group-hover:text-white">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      </div>
+      <div class="contact-us">
+        <div class="text-theme3 text-lg leading-[133%] uppercase mb-5 font-bold">
+          CONTACT US
+        </div>
+        <div class="">
+          <a href="" class="text-sm leading-6 text-theme3 hover:text-theme2">
+            info@nuxgame.com</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-span-6 sm:col-span-2 lg:col-span-2">
+        <div class="size-full">
+        <div class="text-theme3 text-lg leading-[133%] uppercase font-bold mb-5">
+          MENU
+        </div>
+        <ul>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Partners</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Providers</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="demo.html" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Demo</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Blog</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Contact Us</a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+      <div class="col-span-6 sm:col-span-3 lg:col-span-3">
+        <div class="size-full">
+        <div class="text-theme3 text-lg leading-[133%] uppercase font-bold mb-5">
+          INFO
+          </div>
+        <ul>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Terms and Conditions</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Privacy Policy</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Cookie Policy</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Responsible Gambling</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Careers</a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+      <div class="col-span-12 sm:col-span-7 lg:col-span-4">
+        <div class="size-full">
+        <div class="text-theme3 text-lg leading-[133%] uppercase font-bold mb-5">
+          GUIDES
+          </div>
+        <ul>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              How to Start an Online Casino</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              How to Start an Online Betting Business</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Top Gaming Licenses: Overview</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Curacao Gaming License: Complete Review</a>
+          </li>
+          <li class="mb-[10px]" >
+            <a href="#" class="text-theme3 leading-6 hover:text-theme2 transition-all duration-300 text-sm">
+              Understanding Online Casino Business Models: How Online Casinos Work and Business Opportunities
+            </a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+      </div>
+      </div>
+        </div>
+      
+      
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+          <div class="size-full py-5 sm:py-9 border-b border-theme2">
+          <div class="swiper mySwiper2 before:bg-gradient-to-r before:from-[#e8e5f4] before:to-transparent before:w-32 before:z-10 before:inset-0 before:absolute before:pointer-events-none after:bg-gradient-to-l after:from-[#e8e5f4] after:to-transparent after:w-32 after:z-10 after:inset-0 after:absolute after:pointer-events-none after:left-auto swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper-wrapper !ease-linear">
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/sigma-logo.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/GambleAware-logo.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/antilliphone.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/PCI.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="h-83 flex justify-center items-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/dmca.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex items-center justify-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/eu_gdpr_compliant-logo.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex items-center justify-center overflow-hidden h-[97px]">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/respon.webp" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide group">
+                <div class="flex items-center justify-center overflow-hidden !h-24">
+                  <img class="group-hover:scale-95 transition-all duration-200 size-full object-contain"
+                  src="./assets/img/gaming_labs.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        </div>
+      
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+          <div class="size-full py-5 sm:py-10">
+          <div class="grid grid-cols-12 gap-1 sm:gap-5">
+              <div class="col-span-12 sm:col-span-4 text-slate-500 text-xs leading-6 text-center sm:text-start">
+                The website is owned and operated by NuxGame brand
+            </div>
+            <div class="col-span-12 sm:col-span-4 text-slate-500 text-xs leading-6  text-center">
+              © 2018-2024 NuxGame. All rights reserved.
+            </div>
+            <div class="col-span-12 sm:col-span-4">
+            <div class=" flex items-center justify-center sm:justify-end">
+              <div class="me-4 h-6">
+                <img class="size-full object-cover" src="./assets/img/18_years.svg" alt="">
+              </div>
+              <div class="h-6">
+                <img class="size-full object-cover" src="./assets/img/lock-img.svg" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer end  -->
+
+  <script src="./assets/libs/swiper/swiper-bundle.js"></script>
+
+  <!-- header script  -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebar-overlay");
+    sidebar.classList.toggle("translate-x-full");
+    overlay.classList.toggle("invisible");
+    }
+  </script>
+  <!-- end  -->
+
+<!-- footer swiper  -->
+
+<script>
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop:true,
+    speed:5000,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        961: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView:7 ,
+          spaceBetween: 40,
+        },
+      }
+ });
+</script>
+
+
+ <!-- footer swiper end  -->
+
+ <script>
+  var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop:true,
+    speed:8000,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+    breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        961: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView:5 ,
+          spaceBetween: 60,
+        },
+      }
+ });
+</script>
+
+   <!-- blog script -->
+   <script>
+    var swiper = new Swiper(".myBlog", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        320:{
+           
+           slidesPerView: 1.2,
+           spaceBetween: 10,
+         },
+        450:{
+           
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        750: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
+    <!-- end -->
+
+    <!-- form script  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.getElementById('form-Drop');
+      const menu = document.getElementById('menu');
+      
+      menuButton.addEventListener('click', function() {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('transition-enter');
+      setTimeout(() => {
+        menu.classList.toggle('transition-enter-active');
+      }, 1);
+      });
+      
+      document.addEventListener('click', function(event) {
+      if (!menuButton.contains(event.target) && !menu.contains(event.target)) {
+        menuButton.setAttribute('aria-expanded', 'false');
+        menu.classList.add('hidden');
+        menu.classList.remove('transition-enter-active');
+        menu.classList.add('transition-leave');
+        setTimeout(() => {
+          menu.classList.remove('transition-leave');
+        }, 75);
+      }
+      });
+      });
+      
+      </script>
+
+</body>
+</html>

@@ -22,8 +22,70 @@ module.exports = {
           '100%': { transform: 'rotate(6deg)',
                     
            },
+        },
+        marqueeHorizontal: {
+          '0%': { 
+            transform: 'translateZ(0)',
+            visibility: 'visible',
+          },
+          '100%': { 
+            transform: 'translate3d(-100%,0,0)'
+          },
+        },
+        progress: {
+          '0%': {
+            '--progress': '0',
+          },
+          '100%': {
+            '--progress': '1',
+          }
+        },
+        fixedNav: {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(-60px)' 
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateY(0px)' 
+          },
+        },
+        fall: {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(0)' 
+          },
+          '10%': { 
+            opacity: '1'
+          },
+          '100%': { 
+            opacity: '0.5',
+            transform: 'translateY(100vh)' 
+          },
+        },
+        diagonalfall: {
+          '0%': { 
+            opacity: '0',
+            transform: 'translate(0, 0)' 
+          },
+          '10%': { 
+            opacity: '1'
+          },
+          '100%': { 
+            opacity: '0.25',
+            transform: 'translate(10vw, 100vh)' 
+          },
         }
-      }
+
+      },
+       animation: {
+        'progress': 'progress 3s forwards',
+        'fixed-nav': 'fixedNav 0.6s',
+        'fall': 'fall 0.6s',
+        'diagonalfall': 'diagonalfall 0.6s',
+        'marquee-h': 'marqueeHorizontal 20s linear infinite'
+       },
+     
     },
   },
   plugins: [],
