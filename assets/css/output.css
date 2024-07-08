@@ -1437,6 +1437,14 @@ video {
   height: 2rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
+.h-96{
+  height: 24rem;
+}
+
 .h-\[100cqw\]{
   height: 100cqw;
 }
@@ -1598,6 +1606,10 @@ video {
 
 .max-w-7xl{
   max-width: 80rem;
+}
+
+.max-w-96{
+  max-width: 24rem;
 }
 
 .max-w-\[85rem\]{
@@ -2277,6 +2289,10 @@ video {
 
 .gap-12{
   gap: 3rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
 }
 
 .gap-2{
@@ -6155,8 +6171,16 @@ body{
     padding-inline-end: 2.5rem;
   }
 
+  .md\:pl-7{
+    padding-left: 1.75rem;
+  }
+
   .md\:pr-20{
     padding-right: 5rem;
+  }
+
+  .md\:pr-7{
+    padding-right: 1.75rem;
   }
 
   .md\:ps-10{
