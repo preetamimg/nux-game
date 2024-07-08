@@ -1379,6 +1379,10 @@ video {
   height: 2rem;
 }
 
+.h-96{
+  height: 24rem;
+}
+
 .h-\[100cqw\]{
   height: 100cqw;
 }
@@ -1526,12 +1530,20 @@ video {
   max-width: 48rem;
 }
 
+.max-w-52{
+  max-width: 13rem;
+}
+
 .max-w-6xl{
   max-width: 72rem;
 }
 
 .max-w-7xl{
   max-width: 80rem;
+}
+
+.max-w-96{
+  max-width: 24rem;
 }
 
 .max-w-\[85rem\]{
@@ -2187,6 +2199,10 @@ video {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
 }
 
 .gap-2{
@@ -3388,6 +3404,11 @@ video {
 .text-4xl\/tight{
   font-size: 2.25rem;
   line-height: 1.25;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-7xl{
