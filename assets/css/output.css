@@ -1404,6 +1404,10 @@ video {
   height: max-content;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .\!w-max{
   width: -moz-max-content !important;
   width: max-content !important;
@@ -1528,10 +1532,6 @@ video {
 
 .max-w-3xl{
   max-width: 48rem;
-}
-
-.max-w-52{
-  max-width: 13rem;
 }
 
 .max-w-6xl{
@@ -5885,8 +5885,16 @@ body{
     padding-bottom: 10rem;
   }
 
+  .md\:pl-7{
+    padding-left: 1.75rem;
+  }
+
   .md\:pr-20{
     padding-right: 5rem;
+  }
+
+  .md\:pr-7{
+    padding-right: 1.75rem;
   }
 
   .md\:pt-16{
