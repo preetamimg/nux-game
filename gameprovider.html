@@ -1285,13 +1285,11 @@
 
   <div class="max-w-7xl mx-auto px-6 lg:px-8 my-10">
     <h1 class="text-theme3 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl w-full lg:w-2/3">ONLINE CASINO GAMES</h1>
-    <div class="grid grid-cols-12 md:gap-10 gap-3 justify-center items-center">
-      <div class="col-span-12 md:col-span-7 order-2 lg:col-span-8 md:order-1">
-        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper myContent2">
-          <div class="swiper-wrapper ">
-            <div class="swiper-slide">
+    <div class="flex flex-wrap">
+        <div class="md:w-8/12 w-full pe-10">
+          <div class=" flex flex-col ">
+            <div id="one" class="firstTabs active tabsMenu [&.active]:block hidden">
               <div class="">
-
                 <p class="md:text-xl text-base  text-slate-500 my-6">
                   Casino games - over 110 iGaming brands, including world-renowned online casino software providers on
                   the market. NuxGame offers a vast collection of online casino games, including slots, video poker,
@@ -1308,7 +1306,7 @@
                 </p>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div id="two" class="secondTabs  tabsMenu [&.active]:block hidden">
               <p class="md:text-xl text-base  text-slate-500 my-6">
                 In order to make an informed choice of providers and gaming content for a casino website, it is
                 recommended to research the targeted market. To do that, one must define what are its popular game
@@ -1322,7 +1320,7 @@
                 Check out the list of casino software providers available using the demo version of the platform
               </p>
             </div>
-            <div class="swiper-slide">
+            <div id="three" class="thiredTabs  tabsMenu [&.active]:block hidden">
               <p class="md:text-xl text-base  text-slate-500 my-6">
                 All-in-one platform - ready-to-launch iGaming solution for building a fully-fledged online casino
                 website from scratch.
@@ -1347,7 +1345,7 @@
               </p>
 
             </div>
-            <div class="swiper-slide">
+            <div id="four" class="forthTabs  tabsMenu [&.active]:block hidden">
               <p class="md:text-xl text-base  text-slate-500 my-6">
                 Compile your own casino portfolio - swift and effortless integration of casino game suppliers.
               </p>
@@ -1369,35 +1367,25 @@
               </p>
 
             </div>
-
           </div>
         </div>
-
-
-      </div>
-      <div class="col-span-12 md:col-span-5 lg:col-span-4 mt-4 md:mt-0 flex overflow-x-auto order-1 md:order-2">
-        <div thumbsSlider="" class="swiper mycontent !w-full !h-full my-auto">
-          <div
-            class=" swiper-wrapper gap-3 md:flex-col md:gap-y-4 md:justify-center items-center !h-auto sm:text-base text-sm font-semibold !w-full [&>.swiper-slide-thumb-active]:bg-theme3 [&>.swiper-slide-thumb-active]:rounded-lg [&>.swiper-slide-thumb-active]:!text-white">
-            <div
-              class="swiper-slide md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer">
-              <div class=""> GAME CATEGORIES</div>
-            </div>
-            <div
-              class="swiper-slide md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer">
-              <div class=" "> HOW TO CHOOSE CASINO GAME PROVIDERS</div>
-            </div>
-            <div
-              class="swiper-slide md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer">
-              <div class=" "> ADVANTAGES</div>
-            </div>
-            <div
-              class="swiper-slide md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer">
-              <div class=" ">CASINO GAME INTEGRATIONS</div>
-            </div>
+        <div class="md:w-4/12 w-full ps-10">
+          <div class="flex items-center md:flex-col md:flex-wrap gap-3 flex-nowrap max-md:overflow-x-auto w-full">
+              <button activeId="one" class="tab-button max-md:text-nowrap md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer [&.active]:bg-theme1 [&.active]:text-white active" >
+                  GAME CATEGORIES
+              </button>
+              <button activeId="two" class="tab-button max-md:text-nowrap md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer [&.active]:bg-theme1 [&.active]:text-white" >
+                  HOW TO CHOOSE CASINO GAME PROVIDERS
+              </button>
+              <button activeId="three" class="tab-button max-md:text-nowrap md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer [&.active]:bg-theme1 [&.active]:text-white" >
+                  ADVANTAGES
+              </button>
+              <button activeId="four" class="tab-button max-md:text-nowrap md:!w-full !w-auto !mr-0 md:p-4 text-theme3 md:font-bold text-base font-semibold md:text-md p-2 md:border-b md:border-theme3 border border-theme3 rounded-lg cursor-pointer" data-tab="fourthTabs">
+                  CASINO GAME INTEGRATIONS
+              </button>
           </div>
-        </div>
       </div>
+  
 
     </div>
   </div>
@@ -1868,24 +1856,31 @@
     </script>
 
     <!-- thumbslider script -->
-  <script>
-    var swiper = new Swiper(".mycontent", {
-      spaceBetween: 40,
-      slidesPerView: "auto",
-      freeMode: true,
-      watchSlidesProgress: true,
-      
-    });
+    <script>
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tabsMenu');
 
-    var swiper2 = new Swiper(".myContent2", {
-      spaceBetween: 10,
+      tabButtons?.forEach(btn=>{
+        btn.addEventListener('click', (e)=> {
+          tabContents?.forEach(tabs=>{
+            tabs.classList.remove('active')
+          })
+          tabButtons?.forEach(btnnn=>{
+            btnnn.classList.remove('active')
+          })
+          const activeId = e.currentTarget.getAttribute('activeId');
+          const selectedElement = document.getElementById(activeId)
+          selectedElement.classList.add('active')
+          e.currentTarget.classList.add('active')
+        })
+      })
+
       
-      thumbs: {
-        swiper: swiper,
-      },
-    });
   </script>
     <!-- thumbslider script -->
+
+
+
 
 </body>
 
