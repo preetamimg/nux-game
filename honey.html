@@ -10,15 +10,15 @@
     <!-- HEADER -->
         <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-2 sm:py-0">
           <nav class="relative max-w-[85rem] py-3 w-full mx-auto px-4 flex items-center justify-between sm:px-6 lg:px-8" aria-label="Global">
-            <div class="flex items-center justify-between w-full">
+            <div class="flex items-center justify-between w-full flex-wrap lg:flex-nowrap">
               <div class="flex items-center  w-full justify-between">
                 <div class="flex items-center gap-10">
                   <a class="flex-none text-xl font-semibold w-36" href="./index.html" aria-label="Brand">
                     <img src="./assets/img/headerLogo.webp" alt="logo" class="size-full">
                   </a>
                   <ul class="lg:flex gap-4 hidden">
-                    <li><a href="javascript:;" class="inline-block relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:bg-theme2 hover:after:w-1/2 hover:after:h-1 hover:after:rounded-full transition-all duration-300">HOME</a></li>
-                    <li><a href="javascript:;" class="inline-block relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:bg-theme2 hover:after:w-1/2 hover:after:h-1 hover:after:rounded-full transition-all duration-300">JOBS</a></li>
+                    <li><a href="javascript:;" class="inline-block relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 text-theme1 font-semibold hover:after:bg-theme2 hover:after:w-1/2  hover:after:h-1  hover:after:rounded-full transition-all duration-300">HOME</a></li>
+                    <li><a href="javascript:;" class="inline-block relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 text-theme1 font-semibold hover:after:bg-theme2 hover:after:w-1/2 hover:after:h-1 hover:after:rounded-full transition-all duration-300">JOBS</a></li>
                   </ul>
                 </div>
                 <div class="lg:hidden">
@@ -32,8 +32,8 @@
                   </button>
                 </div>
               </div>
-              <div id="navbar-collapse-with-animation" class="hs-collapse hidden transition-all duration-300 basis-full grow lg:block">
-                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7 gap-2">
+              <div id="navbar-collapse-with-animation" class="hs-collapse  transition-all duration-300 basis-full grow ">
+                <div class="flex sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7 gap-2 mx-auto lg:mx-0 w-fit lg:w-auto">
                   <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:-translate-y-2 hover:border-theme2  hover:text-theme2 transition-all duration-300  items-center justify-center">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                   </a>
@@ -315,7 +315,7 @@
         </div>
       </div>
     </div>  
-  </div>
+    </div>
     <!-- header ends -->
 
 
@@ -2018,7 +2018,16 @@
 
 
 
-
+  <!-- header script  -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("sidebar-overlay");
+    sidebar.classList.toggle("translate-x-full");
+    overlay.classList.toggle("invisible");
+    }
+  </script>
+  <!-- end  -->
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {

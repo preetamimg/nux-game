@@ -6576,6 +6576,10 @@ body{
     width: 58.333333%;
   }
 
+  .lg\:w-auto{
+    width: auto;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
@@ -6602,6 +6606,10 @@ body{
 
   .lg\:flex-col{
     flex-direction: column;
+  }
+
+  .lg\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 
   .lg\:gap-0{
