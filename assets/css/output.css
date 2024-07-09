@@ -1535,6 +1535,11 @@ video {
   width: auto;
 }
 
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full{
   width: 100%;
 }
@@ -4866,16 +4871,6 @@ body{
   height: 40%;
 }
 
-.after\:h-0::after{
-  content: var(--tw-content);
-  height: 0px;
-}
-
-.after\:h-0\.5::after{
-  content: var(--tw-content);
-  height: 0.125rem;
-}
-
 .after\:h-2::after{
   content: var(--tw-content);
   height: 0.5rem;
@@ -4894,11 +4889,6 @@ body{
 .after\:h-full::after{
   content: var(--tw-content);
   height: 100%;
-}
-
-.after\:h-1::after{
-  content: var(--tw-content);
-  height: 0.25rem;
 }
 
 .after\:w-1\/2::after{
@@ -4931,11 +4921,6 @@ body{
   content: var(--tw-content);
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:rounded-full::after{
-  content: var(--tw-content);
-  border-radius: 9999px;
 }
 
 .after\:rounded-bl-xl::after{
@@ -5026,12 +5011,6 @@ body{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(68 0 145 / var(--tw-bg-opacity));
-}
-
-.after\:bg-theme2::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(124 124 254 / var(--tw-bg-opacity));
 }
 
 .after\:bg-transparent::after{
@@ -5222,19 +5201,9 @@ body{
   left: 0px;
 }
 
-.hover\:after\:mt-2:hover::after{
-  content: var(--tw-content);
-  margin-top: 0.5rem;
-}
-
 .hover\:after\:h-1:hover::after{
   content: var(--tw-content);
   height: 0.25rem;
-}
-
-.hover\:after\:w-full:hover::after{
-  content: var(--tw-content);
-  width: 100%;
 }
 
 .hover\:after\:w-1\/2:hover::after{
@@ -5251,11 +5220,6 @@ body{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(124 124 254 / var(--tw-bg-opacity));
-}
-
-.hover\:after\:pt-2:hover::after{
-  content: var(--tw-content);
-  padding-top: 0.5rem;
 }
 
 .focus\:border:focus{
@@ -6325,6 +6289,10 @@ body{
     width: 58.333333%;
   }
 
+  .lg\:w-auto{
+    width: auto;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
@@ -6351,6 +6319,10 @@ body{
 
   .lg\:flex-col{
     flex-direction: column;
+  }
+
+  .lg\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 
   .lg\:gap-0{
