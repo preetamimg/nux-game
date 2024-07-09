@@ -10,54 +10,54 @@
 <body>
 <!-- header start  -->
 
-<div class="mx-auto max-w-7xl lg:px-8 w-full absolute left-0 top-0">
+<div class="mx-auto max-w-7xl z-50 lg:px-8 w-full absolute left-0 top-0">
   <!-- HEADER -->
-      <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-transparent text-sm py-2 sm:py-0">
-        <nav class="relative max-w-[85rem] py-3 w-full mx-auto px-4 flex items-center justify-between sm:px-6 lg:px-8" aria-label="Global">
-          <div class="flex items-center justify-between w-full">
-            <div class="flex items-center  w-full justify-between">
-              <div class="flex items-center gap-10">
-                <a class="flex-none text-xl font-semibold w-36" href="./index.html" aria-label="Brand">
-                  <img src="./assets/img/headerLogo.webp" alt="logo" class="size-full">
-                </a>
-                <ul class="lg:flex gap-4 hidden">
-                  <li><a href="javascript:;" class="inline-block relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:bg-theme2 hover:after:w-1/2 hover:after:h-1 hover:after:rounded-full transition-all duration-300">HOME</a></li>
-                  <li><a href="javascript:;" class="inline-block relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:bg-theme2 hover:after:w-1/2 hover:after:h-1 hover:after:rounded-full transition-all duration-300">JOBS</a></li>
-                </ul>
-              </div>
-              <div class="lg:hidden">
-                <button type="button" onclick="toggleSidebar()" class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                  <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-                  <svg class="hs-collapse-open:block flex-shrink-0 hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div id="navbar-collapse-with-animation" class="hs-collapse hidden transition-all duration-300 basis-full grow lg:block">
-              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7 gap-2">
-                <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:-translate-y-2 hover:border-theme2  hover:text-theme2 transition-all duration-300  items-center justify-center">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
-                </a>
-                <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:border-theme2 hover:-translate-y-2 hover:text-theme2  transition-all duration-300  items-center justify-center">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"height="13px" width="13px"   xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
-                </a>
-                
-                <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:border-theme2 hover:-translate-y-2 hover:text-theme2  transition-all duration-300  items-center justify-center">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-                </a>
-                <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:border-theme2 hover:-translate-y-2 hover:text-theme2  transition-all duration-300  items-center justify-center">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                </a>
-              </div>
-            </div>
+  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-transparent text-sm py-2 sm:py-0">
+    <nav class="relative max-w-[85rem] py-3 w-full mx-auto px-4 flex items-center justify-between sm:px-6 lg:px-8" aria-label="Global">
+      <div class="flex items-center justify-between w-full flex-wrap lg:flex-nowrap">
+        <div class="flex items-center  w-full justify-between">
+          <div class="flex items-center gap-10">
+            <a class="flex-none text-xl font-semibold w-36" href="./index.html" aria-label="Brand">
+              <img src="./assets/img/headerLogo.webp" alt="logo" class="size-full">
+            </a>
+            <ul class="lg:flex gap-4 hidden">
+              <li><a href="javascript:;" class="font-semibold text-theme1 relative before:absolute before:w-1/2 before:h-0.5 before:bg-theme2 before:bottom-0 before:left-0 before:rounded-full pb-1 before:-translate-x-6 before:opacity-0 before:hover:opacity-100 before:hover:translate-x-0 before:duration-500 inline-block">HOME</a></li>
+              <li><a href="javascript:;" class="font-semibold text-theme1 relative before:absolute before:w-1/2 before:h-0.5 before:bg-theme2 before:bottom-0 before:left-0 before:rounded-full pb-1 before:-translate-x-6 before:opacity-0 before:hover:opacity-100 before:hover:translate-x-0 before:duration-500 inline-block">JOBS</a></li>
+            </ul>
           </div>
-         
-          
-        </nav>
-      </header>
+          <div class="lg:hidden">
+            <button type="button" onclick="toggleSidebar()" class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+              <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <svg class="hs-collapse-open:block flex-shrink-0 hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="navbar-collapse-with-animation" class="hs-collapse  transition-all duration-300 basis-full grow ">
+          <div class="flex sm:flex-row sm:items-center sm:justify-end py-2 md:py-0 sm:ps-7 gap-2 mx-auto lg:mx-0 w-fit lg:w-auto">
+            <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:-translate-y-2 hover:border-theme2  hover:text-theme2 transition-all duration-300  items-center justify-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+            </a>
+            <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:border-theme2 hover:-translate-y-2 hover:text-theme2  transition-all duration-300  items-center justify-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"height="13px" width="13px"   xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+            </a>
+            
+            <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:border-theme2 hover:-translate-y-2 hover:text-theme2  transition-all duration-300  items-center justify-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+            </a>
+            <a href="jaavscript:;" class="size-9 inline-flex border border-black rounded-full hover:border hover:border-theme2 hover:-translate-y-2 hover:text-theme2  transition-all duration-300  items-center justify-center">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="13px" width="13px" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+     
+      
+    </nav>
+  </header>
   <!-- END HEADER -->
   
 
